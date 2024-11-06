@@ -1,0 +1,31 @@
+[2024-11-05T23:29:32.651+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-11-05T23:29:32.670+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: cotahist_etl.load_stage manual__2024-11-05T23:29:27.201938+00:00 [queued]>
+[2024-11-05T23:29:32.678+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: cotahist_etl.load_stage manual__2024-11-05T23:29:27.201938+00:00 [queued]>
+[2024-11-05T23:29:32.679+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2024-11-05T23:29:32.690+0000] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): load_stage> on 2024-11-05 23:29:27.201938+00:00
+[2024-11-05T23:29:32.698+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=503) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-11-05T23:29:32.700+0000] {standard_task_runner.py:72} INFO - Started process 511 to run task
+[2024-11-05T23:29:32.701+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'cotahist_etl', 'load_stage', 'manual__2024-11-05T23:29:27.201938+00:00', '--job-id', '22', '--raw', '--subdir', 'DAGS_FOLDER/cargab3.py', '--cfg-path', '/tmp/tmpxan37fi1']
+[2024-11-05T23:29:32.702+0000] {standard_task_runner.py:105} INFO - Job 22: Subtask load_stage
+[2024-11-05T23:29:32.746+0000] {task_command.py:467} INFO - Running <TaskInstance: cotahist_etl.load_stage manual__2024-11-05T23:29:27.201938+00:00 [running]> on host 0e811c25cd9f
+[2024-11-05T23:29:32.836+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='cotahist_etl' AIRFLOW_CTX_TASK_ID='load_stage' AIRFLOW_CTX_EXECUTION_DATE='2024-11-05T23:29:27.201938+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-11-05T23:29:27.201938+00:00'
+[2024-11-05T23:29:32.837+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2024-11-05T23:29:32.838+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2024-11-05T23:29:32.839+0000] {logging_mixin.py:190} INFO - Current task name:load_stage state:running start_date:2024-11-05 23:29:32.670841+00:00
+[2024-11-05T23:29:32.839+0000] {logging_mixin.py:190} INFO - Dag name:cotahist_etl and current dag run status:running
+[2024-11-05T23:29:32.839+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-11-05T23:29:32.849+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-05T23:29:32.853+0000] {cargab3.py:74} INFO - Inserindo dados na tabela stage...
+[2024-11-05T23:29:32.853+0000] {cargab3.py:132} WARNING - Nenhum dado para inserir na tabela stage.
+[2024-11-05T23:29:32.854+0000] {python.py:240} INFO - Done. Returned value was: None
+[2024-11-05T23:29:32.863+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-11-05T23:29:32.864+0000] {taskinstance.py:352} INFO - Marking task as SUCCESS. dag_id=cotahist_etl, task_id=load_stage, run_id=manual__2024-11-05T23:29:27.201938+00:00, execution_date=20241105T232927, start_date=20241105T232932, end_date=20241105T232932
+[2024-11-05T23:29:32.871+0000] {logging_mixin.py:190} INFO - Task instance in success state
+[2024-11-05T23:29:32.872+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: running
+[2024-11-05T23:29:32.872+0000] {logging_mixin.py:190} INFO - Dag name:cotahist_etl queued_at:2024-11-05 23:29:27.221305+00:00
+[2024-11-05T23:29:32.873+0000] {logging_mixin.py:190} INFO - Task hostname:0e811c25cd9f operator:PythonOperator
+[2024-11-05T23:29:32.915+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 0
+[2024-11-05T23:29:32.933+0000] {taskinstance.py:3891} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2024-11-05T23:29:32.934+0000] {local_task_job_runner.py:240} INFO - ::endgroup::

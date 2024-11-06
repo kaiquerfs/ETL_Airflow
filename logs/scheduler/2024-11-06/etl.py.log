@@ -1,0 +1,203 @@
+[2024-11-06T15:48:50.602+0000] {processor.py:186} INFO - Started process (PID=65) to work on /opt/airflow/dags/etl.py
+[2024-11-06T15:48:50.605+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl.py for tasks to queue
+[2024-11-06T15:48:50.610+0000] {logging_mixin.py:190} INFO - [2024-11-06T15:48:50.610+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/etl.py
+[2024-11-06T15:48:50.762+0000] {processor.py:925} INFO - DAG(s) 'cotahist_etl' retrieved from /opt/airflow/dags/etl.py
+[2024-11-06T15:48:51.054+0000] {logging_mixin.py:190} INFO - [2024-11-06T15:48:51.054+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-11-06T15:48:51.098+0000] {logging_mixin.py:190} INFO - [2024-11-06T15:48:51.098+0000] {dag.py:4138} INFO - Setting next_dagrun for cotahist_etl to 2024-11-06 00:00:00+00:00, run_after=2024-11-07 00:00:00+00:00
+[2024-11-06T15:48:51.166+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl.py took 0.574 seconds
+[2024-11-06T15:49:21.355+0000] {processor.py:186} INFO - Started process (PID=133) to work on /opt/airflow/dags/etl.py
+[2024-11-06T15:49:21.357+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl.py for tasks to queue
+[2024-11-06T15:49:21.364+0000] {logging_mixin.py:190} INFO - [2024-11-06T15:49:21.362+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/etl.py
+[2024-11-06T15:49:21.661+0000] {processor.py:925} INFO - DAG(s) 'cotahist_etl' retrieved from /opt/airflow/dags/etl.py
+[2024-11-06T15:49:21.914+0000] {logging_mixin.py:190} INFO - [2024-11-06T15:49:21.911+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-11-06T15:49:22.350+0000] {logging_mixin.py:190} INFO - [2024-11-06T15:49:22.350+0000] {dag.py:4138} INFO - Setting next_dagrun for cotahist_etl to 2024-11-06 00:00:00+00:00, run_after=2024-11-07 00:00:00+00:00
+[2024-11-06T15:49:22.565+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl.py took 1.253 seconds
+[2024-11-06T15:49:58.805+0000] {processor.py:186} INFO - Started process (PID=200) to work on /opt/airflow/dags/etl.py
+[2024-11-06T15:49:58.819+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/etl.py for tasks to queue
+[2024-11-06T15:49:58.824+0000] {logging_mixin.py:190} INFO - [2024-11-06T15:49:58.822+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/etl.py
+[2024-11-06T15:49:59.342+0000] {processor.py:925} INFO - DAG(s) 'cotahist_etl' retrieved from /opt/airflow/dags/etl.py
+[2024-11-06T15:50:01.265+0000] {logging_mixin.py:190} INFO - [2024-11-06T15:50:01.265+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-11-06T15:50:01.340+0000] {logging_mixin.py:190} INFO - [2024-11-06T15:50:01.336+0000] {dag.py:4138} INFO - Setting next_dagrun for cotahist_etl to 2024-11-06 00:00:00+00:00, run_after=2024-11-07 00:00:00+00:00
+[2024-11-06T15:50:01.411+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/etl.py took 5.137 seconds
+[2024-11-06T15:58:50.911+0000] {processor.py:186} INFO - Started process (PID=1304) to work on /opt/airflow/dags/ETL.py
+[2024-11-06T15:58:50.913+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ETL.py for tasks to queue
+[2024-11-06T15:58:50.916+0000] {logging_mixin.py:190} INFO - [2024-11-06T15:58:50.915+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/ETL.py
+[2024-11-06T15:58:50.978+0000] {processor.py:925} INFO - DAG(s) 'cotahist_etl' retrieved from /opt/airflow/dags/ETL.py
+[2024-11-06T15:58:51.146+0000] {logging_mixin.py:190} INFO - [2024-11-06T15:58:51.145+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-11-06T15:58:51.172+0000] {logging_mixin.py:190} INFO - [2024-11-06T15:58:51.172+0000] {dag.py:4138} INFO - Setting next_dagrun for cotahist_etl to 2024-11-06 00:00:00+00:00, run_after=2024-11-07 00:00:00+00:00
+[2024-11-06T15:58:51.203+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ETL.py took 0.299 seconds
+[2024-11-06T15:59:21.542+0000] {processor.py:186} INFO - Started process (PID=1368) to work on /opt/airflow/dags/ETL.py
+[2024-11-06T15:59:21.544+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ETL.py for tasks to queue
+[2024-11-06T15:59:21.546+0000] {logging_mixin.py:190} INFO - [2024-11-06T15:59:21.546+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/ETL.py
+[2024-11-06T15:59:21.593+0000] {processor.py:925} INFO - DAG(s) 'cotahist_etl' retrieved from /opt/airflow/dags/ETL.py
+[2024-11-06T15:59:21.619+0000] {logging_mixin.py:190} INFO - [2024-11-06T15:59:21.619+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-11-06T15:59:21.650+0000] {logging_mixin.py:190} INFO - [2024-11-06T15:59:21.650+0000] {dag.py:4138} INFO - Setting next_dagrun for cotahist_etl to 2024-11-06 00:00:00+00:00, run_after=2024-11-07 00:00:00+00:00
+[2024-11-06T15:59:21.673+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ETL.py took 0.137 seconds
+[2024-11-06T15:59:52.167+0000] {processor.py:186} INFO - Started process (PID=1427) to work on /opt/airflow/dags/ETL.py
+[2024-11-06T15:59:52.169+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ETL.py for tasks to queue
+[2024-11-06T15:59:52.171+0000] {logging_mixin.py:190} INFO - [2024-11-06T15:59:52.170+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/ETL.py
+[2024-11-06T15:59:52.213+0000] {processor.py:925} INFO - DAG(s) 'cotahist_etl' retrieved from /opt/airflow/dags/ETL.py
+[2024-11-06T15:59:52.236+0000] {logging_mixin.py:190} INFO - [2024-11-06T15:59:52.236+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-11-06T15:59:52.265+0000] {logging_mixin.py:190} INFO - [2024-11-06T15:59:52.265+0000] {dag.py:4138} INFO - Setting next_dagrun for cotahist_etl to 2024-11-06 00:00:00+00:00, run_after=2024-11-07 00:00:00+00:00
+[2024-11-06T15:59:52.290+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ETL.py took 0.133 seconds
+[2024-11-06T16:00:22.549+0000] {processor.py:186} INFO - Started process (PID=1491) to work on /opt/airflow/dags/ETL.py
+[2024-11-06T16:00:22.551+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ETL.py for tasks to queue
+[2024-11-06T16:00:22.554+0000] {logging_mixin.py:190} INFO - [2024-11-06T16:00:22.553+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/ETL.py
+[2024-11-06T16:00:22.606+0000] {processor.py:925} INFO - DAG(s) 'cotahist_etl' retrieved from /opt/airflow/dags/ETL.py
+[2024-11-06T16:00:22.634+0000] {logging_mixin.py:190} INFO - [2024-11-06T16:00:22.633+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-11-06T16:00:22.665+0000] {logging_mixin.py:190} INFO - [2024-11-06T16:00:22.665+0000] {dag.py:4138} INFO - Setting next_dagrun for cotahist_etl to 2024-11-06 00:00:00+00:00, run_after=2024-11-07 00:00:00+00:00
+[2024-11-06T16:00:22.702+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ETL.py took 0.163 seconds
+[2024-11-06T16:00:52.783+0000] {processor.py:186} INFO - Started process (PID=1554) to work on /opt/airflow/dags/ETL.py
+[2024-11-06T16:00:52.785+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ETL.py for tasks to queue
+[2024-11-06T16:00:52.788+0000] {logging_mixin.py:190} INFO - [2024-11-06T16:00:52.787+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/ETL.py
+[2024-11-06T16:00:52.844+0000] {processor.py:925} INFO - DAG(s) 'cotahist_etl' retrieved from /opt/airflow/dags/ETL.py
+[2024-11-06T16:00:52.883+0000] {logging_mixin.py:190} INFO - [2024-11-06T16:00:52.883+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-11-06T16:00:52.932+0000] {logging_mixin.py:190} INFO - [2024-11-06T16:00:52.932+0000] {dag.py:4138} INFO - Setting next_dagrun for cotahist_etl to 2024-11-06 00:00:00+00:00, run_after=2024-11-07 00:00:00+00:00
+[2024-11-06T16:00:52.972+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ETL.py took 0.197 seconds
+[2024-11-06T16:01:21.320+0000] {processor.py:186} INFO - Started process (PID=1604) to work on /opt/airflow/dags/ETL.py
+[2024-11-06T16:01:21.321+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ETL.py for tasks to queue
+[2024-11-06T16:01:21.324+0000] {logging_mixin.py:190} INFO - [2024-11-06T16:01:21.324+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/ETL.py
+[2024-11-06T16:01:21.426+0000] {processor.py:925} INFO - DAG(s) 'cotahist_etl' retrieved from /opt/airflow/dags/ETL.py
+[2024-11-06T16:01:21.457+0000] {logging_mixin.py:190} INFO - [2024-11-06T16:01:21.456+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-11-06T16:01:21.488+0000] {logging_mixin.py:190} INFO - [2024-11-06T16:01:21.488+0000] {dag.py:4138} INFO - Setting next_dagrun for cotahist_etl to 2024-11-06 00:00:00+00:00, run_after=2024-11-07 00:00:00+00:00
+[2024-11-06T16:01:21.523+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ETL.py took 0.210 seconds
+[2024-11-06T16:01:51.688+0000] {processor.py:186} INFO - Started process (PID=1667) to work on /opt/airflow/dags/ETL.py
+[2024-11-06T16:01:51.690+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ETL.py for tasks to queue
+[2024-11-06T16:01:51.693+0000] {logging_mixin.py:190} INFO - [2024-11-06T16:01:51.692+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/ETL.py
+[2024-11-06T16:01:51.774+0000] {processor.py:925} INFO - DAG(s) 'cotahist_etl' retrieved from /opt/airflow/dags/ETL.py
+[2024-11-06T16:01:51.802+0000] {logging_mixin.py:190} INFO - [2024-11-06T16:01:51.802+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-11-06T16:01:51.835+0000] {logging_mixin.py:190} INFO - [2024-11-06T16:01:51.835+0000] {dag.py:4138} INFO - Setting next_dagrun for cotahist_etl to 2024-11-06 00:00:00+00:00, run_after=2024-11-07 00:00:00+00:00
+[2024-11-06T16:01:51.867+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ETL.py took 0.193 seconds
+[2024-11-06T16:02:22.645+0000] {processor.py:186} INFO - Started process (PID=1730) to work on /opt/airflow/dags/ETL.py
+[2024-11-06T16:02:22.648+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ETL.py for tasks to queue
+[2024-11-06T16:02:22.651+0000] {logging_mixin.py:190} INFO - [2024-11-06T16:02:22.650+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/ETL.py
+[2024-11-06T16:02:22.725+0000] {processor.py:925} INFO - DAG(s) 'cotahist_etl' retrieved from /opt/airflow/dags/ETL.py
+[2024-11-06T16:02:22.760+0000] {logging_mixin.py:190} INFO - [2024-11-06T16:02:22.760+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-11-06T16:02:22.791+0000] {logging_mixin.py:190} INFO - [2024-11-06T16:02:22.790+0000] {dag.py:4138} INFO - Setting next_dagrun for cotahist_etl to 2024-11-06 00:00:00+00:00, run_after=2024-11-07 00:00:00+00:00
+[2024-11-06T16:02:22.818+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ETL.py took 0.185 seconds
+[2024-11-06T16:02:35.332+0000] {processor.py:186} INFO - Started process (PID=1763) to work on /opt/airflow/dags/ETL.py
+[2024-11-06T16:02:35.334+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ETL.py for tasks to queue
+[2024-11-06T16:02:35.337+0000] {logging_mixin.py:190} INFO - [2024-11-06T16:02:35.336+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/ETL.py
+[2024-11-06T16:02:35.448+0000] {processor.py:925} INFO - DAG(s) 'cotahist_etl' retrieved from /opt/airflow/dags/ETL.py
+[2024-11-06T16:02:35.481+0000] {logging_mixin.py:190} INFO - [2024-11-06T16:02:35.481+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-11-06T16:02:35.523+0000] {logging_mixin.py:190} INFO - [2024-11-06T16:02:35.522+0000] {dag.py:4138} INFO - Setting next_dagrun for cotahist_etl to 2024-11-06 00:00:00+00:00, run_after=2024-11-07 00:00:00+00:00
+[2024-11-06T16:02:35.561+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ETL.py took 0.241 seconds
+[2024-11-06T16:03:05.908+0000] {processor.py:186} INFO - Started process (PID=1826) to work on /opt/airflow/dags/ETL.py
+[2024-11-06T16:03:05.910+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ETL.py for tasks to queue
+[2024-11-06T16:03:05.912+0000] {logging_mixin.py:190} INFO - [2024-11-06T16:03:05.912+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/ETL.py
+[2024-11-06T16:03:05.982+0000] {processor.py:925} INFO - DAG(s) 'cotahist_etl' retrieved from /opt/airflow/dags/ETL.py
+[2024-11-06T16:03:06.019+0000] {logging_mixin.py:190} INFO - [2024-11-06T16:03:06.019+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-11-06T16:03:06.058+0000] {logging_mixin.py:190} INFO - [2024-11-06T16:03:06.058+0000] {dag.py:4138} INFO - Setting next_dagrun for cotahist_etl to 2024-11-06 00:00:00+00:00, run_after=2024-11-07 00:00:00+00:00
+[2024-11-06T16:03:06.085+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ETL.py took 0.187 seconds
+[2024-11-06T16:03:36.965+0000] {processor.py:186} INFO - Started process (PID=1889) to work on /opt/airflow/dags/ETL.py
+[2024-11-06T16:03:36.966+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ETL.py for tasks to queue
+[2024-11-06T16:03:36.969+0000] {logging_mixin.py:190} INFO - [2024-11-06T16:03:36.968+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/ETL.py
+[2024-11-06T16:03:37.029+0000] {processor.py:925} INFO - DAG(s) 'cotahist_etl' retrieved from /opt/airflow/dags/ETL.py
+[2024-11-06T16:03:37.058+0000] {logging_mixin.py:190} INFO - [2024-11-06T16:03:37.057+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-11-06T16:03:37.090+0000] {logging_mixin.py:190} INFO - [2024-11-06T16:03:37.090+0000] {dag.py:4138} INFO - Setting next_dagrun for cotahist_etl to 2024-11-06 00:00:00+00:00, run_after=2024-11-07 00:00:00+00:00
+[2024-11-06T16:03:37.117+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ETL.py took 0.161 seconds
+[2024-11-06T16:04:07.431+0000] {processor.py:186} INFO - Started process (PID=1952) to work on /opt/airflow/dags/ETL.py
+[2024-11-06T16:04:07.432+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ETL.py for tasks to queue
+[2024-11-06T16:04:07.434+0000] {logging_mixin.py:190} INFO - [2024-11-06T16:04:07.434+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/ETL.py
+[2024-11-06T16:04:07.507+0000] {processor.py:925} INFO - DAG(s) 'cotahist_etl' retrieved from /opt/airflow/dags/ETL.py
+[2024-11-06T16:04:07.542+0000] {logging_mixin.py:190} INFO - [2024-11-06T16:04:07.542+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-11-06T16:04:07.582+0000] {logging_mixin.py:190} INFO - [2024-11-06T16:04:07.582+0000] {dag.py:4138} INFO - Setting next_dagrun for cotahist_etl to 2024-11-06 00:00:00+00:00, run_after=2024-11-07 00:00:00+00:00
+[2024-11-06T16:04:07.614+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ETL.py took 0.191 seconds
+[2024-11-06T16:04:14.414+0000] {processor.py:186} INFO - Started process (PID=1964) to work on /opt/airflow/dags/ETL.py
+[2024-11-06T16:04:14.416+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ETL.py for tasks to queue
+[2024-11-06T16:04:14.418+0000] {logging_mixin.py:190} INFO - [2024-11-06T16:04:14.417+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/ETL.py
+[2024-11-06T16:04:14.534+0000] {processor.py:925} INFO - DAG(s) 'cotahist_etl' retrieved from /opt/airflow/dags/ETL.py
+[2024-11-06T16:04:14.574+0000] {logging_mixin.py:190} INFO - [2024-11-06T16:04:14.574+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-11-06T16:04:14.621+0000] {logging_mixin.py:190} INFO - [2024-11-06T16:04:14.620+0000] {dag.py:4138} INFO - Setting next_dagrun for cotahist_etl to 2024-11-06 00:00:00+00:00, run_after=2024-11-07 00:00:00+00:00
+[2024-11-06T16:04:14.671+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ETL.py took 0.265 seconds
+[2024-11-06T16:04:45.618+0000] {processor.py:186} INFO - Started process (PID=2027) to work on /opt/airflow/dags/ETL.py
+[2024-11-06T16:04:45.620+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ETL.py for tasks to queue
+[2024-11-06T16:04:45.622+0000] {logging_mixin.py:190} INFO - [2024-11-06T16:04:45.622+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/ETL.py
+[2024-11-06T16:04:45.667+0000] {processor.py:925} INFO - DAG(s) 'cotahist_etl' retrieved from /opt/airflow/dags/ETL.py
+[2024-11-06T16:04:45.699+0000] {logging_mixin.py:190} INFO - [2024-11-06T16:04:45.699+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-11-06T16:04:45.734+0000] {logging_mixin.py:190} INFO - [2024-11-06T16:04:45.734+0000] {dag.py:4138} INFO - Setting next_dagrun for cotahist_etl to 2024-11-06 00:00:00+00:00, run_after=2024-11-07 00:00:00+00:00
+[2024-11-06T16:04:45.758+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ETL.py took 0.148 seconds
+[2024-11-06T16:05:16.059+0000] {processor.py:186} INFO - Started process (PID=2090) to work on /opt/airflow/dags/ETL.py
+[2024-11-06T16:05:16.061+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ETL.py for tasks to queue
+[2024-11-06T16:05:16.063+0000] {logging_mixin.py:190} INFO - [2024-11-06T16:05:16.063+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/ETL.py
+[2024-11-06T16:05:16.135+0000] {processor.py:925} INFO - DAG(s) 'cotahist_etl' retrieved from /opt/airflow/dags/ETL.py
+[2024-11-06T16:05:16.166+0000] {logging_mixin.py:190} INFO - [2024-11-06T16:05:16.166+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-11-06T16:05:16.201+0000] {logging_mixin.py:190} INFO - [2024-11-06T16:05:16.201+0000] {dag.py:4138} INFO - Setting next_dagrun for cotahist_etl to 2024-11-06 00:00:00+00:00, run_after=2024-11-07 00:00:00+00:00
+[2024-11-06T16:05:16.232+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ETL.py took 0.183 seconds
+[2024-11-06T16:05:46.578+0000] {processor.py:186} INFO - Started process (PID=2153) to work on /opt/airflow/dags/ETL.py
+[2024-11-06T16:05:46.581+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ETL.py for tasks to queue
+[2024-11-06T16:05:46.584+0000] {logging_mixin.py:190} INFO - [2024-11-06T16:05:46.583+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/ETL.py
+[2024-11-06T16:05:46.654+0000] {processor.py:925} INFO - DAG(s) 'cotahist_etl' retrieved from /opt/airflow/dags/ETL.py
+[2024-11-06T16:05:46.685+0000] {logging_mixin.py:190} INFO - [2024-11-06T16:05:46.685+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-11-06T16:05:46.721+0000] {logging_mixin.py:190} INFO - [2024-11-06T16:05:46.721+0000] {dag.py:4138} INFO - Setting next_dagrun for cotahist_etl to 2024-11-06 00:00:00+00:00, run_after=2024-11-07 00:00:00+00:00
+[2024-11-06T16:05:46.757+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ETL.py took 0.189 seconds
+[2024-11-06T16:06:17.532+0000] {processor.py:186} INFO - Started process (PID=2216) to work on /opt/airflow/dags/ETL.py
+[2024-11-06T16:06:17.533+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ETL.py for tasks to queue
+[2024-11-06T16:06:17.536+0000] {logging_mixin.py:190} INFO - [2024-11-06T16:06:17.535+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/ETL.py
+[2024-11-06T16:06:17.592+0000] {processor.py:925} INFO - DAG(s) 'cotahist_etl' retrieved from /opt/airflow/dags/ETL.py
+[2024-11-06T16:06:17.620+0000] {logging_mixin.py:190} INFO - [2024-11-06T16:06:17.619+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-11-06T16:06:17.657+0000] {logging_mixin.py:190} INFO - [2024-11-06T16:06:17.657+0000] {dag.py:4138} INFO - Setting next_dagrun for cotahist_etl to 2024-11-06 00:00:00+00:00, run_after=2024-11-07 00:00:00+00:00
+[2024-11-06T16:06:17.684+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ETL.py took 0.160 seconds
+[2024-11-06T16:06:23.087+0000] {processor.py:186} INFO - Started process (PID=2223) to work on /opt/airflow/dags/ETL.py
+[2024-11-06T16:06:23.088+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ETL.py for tasks to queue
+[2024-11-06T16:06:23.091+0000] {logging_mixin.py:190} INFO - [2024-11-06T16:06:23.090+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/ETL.py
+[2024-11-06T16:06:23.168+0000] {processor.py:925} INFO - DAG(s) 'cotahist_etl' retrieved from /opt/airflow/dags/ETL.py
+[2024-11-06T16:06:23.197+0000] {logging_mixin.py:190} INFO - [2024-11-06T16:06:23.196+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-11-06T16:06:23.232+0000] {logging_mixin.py:190} INFO - [2024-11-06T16:06:23.231+0000] {dag.py:4138} INFO - Setting next_dagrun for cotahist_etl to 2024-11-06 00:00:00+00:00, run_after=2024-11-07 00:00:00+00:00
+[2024-11-06T16:06:23.273+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ETL.py took 0.197 seconds
+[2024-11-06T16:06:53.941+0000] {processor.py:186} INFO - Started process (PID=2286) to work on /opt/airflow/dags/ETL.py
+[2024-11-06T16:06:53.943+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ETL.py for tasks to queue
+[2024-11-06T16:06:53.946+0000] {logging_mixin.py:190} INFO - [2024-11-06T16:06:53.946+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/ETL.py
+[2024-11-06T16:06:53.997+0000] {processor.py:925} INFO - DAG(s) 'cotahist_etl' retrieved from /opt/airflow/dags/ETL.py
+[2024-11-06T16:06:54.026+0000] {logging_mixin.py:190} INFO - [2024-11-06T16:06:54.026+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-11-06T16:06:54.059+0000] {logging_mixin.py:190} INFO - [2024-11-06T16:06:54.058+0000] {dag.py:4138} INFO - Setting next_dagrun for cotahist_etl to 2024-11-06 00:00:00+00:00, run_after=2024-11-07 00:00:00+00:00
+[2024-11-06T16:06:54.085+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ETL.py took 0.151 seconds
+[2024-11-06T16:07:24.582+0000] {processor.py:186} INFO - Started process (PID=2353) to work on /opt/airflow/dags/ETL.py
+[2024-11-06T16:07:24.584+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ETL.py for tasks to queue
+[2024-11-06T16:07:24.586+0000] {logging_mixin.py:190} INFO - [2024-11-06T16:07:24.585+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/ETL.py
+[2024-11-06T16:07:24.653+0000] {processor.py:925} INFO - DAG(s) 'cotahist_etl' retrieved from /opt/airflow/dags/ETL.py
+[2024-11-06T16:07:24.680+0000] {logging_mixin.py:190} INFO - [2024-11-06T16:07:24.680+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-11-06T16:07:24.713+0000] {logging_mixin.py:190} INFO - [2024-11-06T16:07:24.713+0000] {dag.py:4138} INFO - Setting next_dagrun for cotahist_etl to 2024-11-06 00:00:00+00:00, run_after=2024-11-07 00:00:00+00:00
+[2024-11-06T16:07:24.739+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ETL.py took 0.165 seconds
+[2024-11-06T16:07:55.207+0000] {processor.py:186} INFO - Started process (PID=2416) to work on /opt/airflow/dags/ETL.py
+[2024-11-06T16:07:55.209+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ETL.py for tasks to queue
+[2024-11-06T16:07:55.212+0000] {logging_mixin.py:190} INFO - [2024-11-06T16:07:55.211+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/ETL.py
+[2024-11-06T16:07:55.359+0000] {processor.py:925} INFO - DAG(s) 'cotahist_etl' retrieved from /opt/airflow/dags/ETL.py
+[2024-11-06T16:07:55.394+0000] {logging_mixin.py:190} INFO - [2024-11-06T16:07:55.393+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-11-06T16:07:55.433+0000] {logging_mixin.py:190} INFO - [2024-11-06T16:07:55.433+0000] {dag.py:4138} INFO - Setting next_dagrun for cotahist_etl to 2024-11-06 00:00:00+00:00, run_after=2024-11-07 00:00:00+00:00
+[2024-11-06T16:07:55.462+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ETL.py took 0.267 seconds
+[2024-11-06T16:08:26.344+0000] {processor.py:186} INFO - Started process (PID=2479) to work on /opt/airflow/dags/ETL.py
+[2024-11-06T16:08:26.346+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ETL.py for tasks to queue
+[2024-11-06T16:08:26.349+0000] {logging_mixin.py:190} INFO - [2024-11-06T16:08:26.349+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/ETL.py
+[2024-11-06T16:08:26.487+0000] {processor.py:925} INFO - DAG(s) 'cotahist_etl' retrieved from /opt/airflow/dags/ETL.py
+[2024-11-06T16:08:26.536+0000] {logging_mixin.py:190} INFO - [2024-11-06T16:08:26.536+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-11-06T16:08:26.581+0000] {logging_mixin.py:190} INFO - [2024-11-06T16:08:26.580+0000] {dag.py:4138} INFO - Setting next_dagrun for cotahist_etl to 2024-11-06 00:00:00+00:00, run_after=2024-11-07 00:00:00+00:00
+[2024-11-06T16:08:26.610+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ETL.py took 0.281 seconds
+[2024-11-06T16:08:57.360+0000] {processor.py:186} INFO - Started process (PID=2542) to work on /opt/airflow/dags/ETL.py
+[2024-11-06T16:08:57.363+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ETL.py for tasks to queue
+[2024-11-06T16:08:57.365+0000] {logging_mixin.py:190} INFO - [2024-11-06T16:08:57.364+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/ETL.py
+[2024-11-06T16:08:57.441+0000] {processor.py:925} INFO - DAG(s) 'cotahist_etl' retrieved from /opt/airflow/dags/ETL.py
+[2024-11-06T16:08:57.488+0000] {logging_mixin.py:190} INFO - [2024-11-06T16:08:57.487+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-11-06T16:08:57.527+0000] {logging_mixin.py:190} INFO - [2024-11-06T16:08:57.526+0000] {dag.py:4138} INFO - Setting next_dagrun for cotahist_etl to 2024-11-06 00:00:00+00:00, run_after=2024-11-07 00:00:00+00:00
+[2024-11-06T16:08:57.550+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ETL.py took 0.208 seconds
+[2024-11-06T16:09:27.886+0000] {processor.py:186} INFO - Started process (PID=2605) to work on /opt/airflow/dags/ETL.py
+[2024-11-06T16:09:27.895+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ETL.py for tasks to queue
+[2024-11-06T16:09:27.898+0000] {logging_mixin.py:190} INFO - [2024-11-06T16:09:27.898+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/ETL.py
+[2024-11-06T16:09:27.997+0000] {processor.py:925} INFO - DAG(s) 'cotahist_etl' retrieved from /opt/airflow/dags/ETL.py
+[2024-11-06T16:09:28.024+0000] {logging_mixin.py:190} INFO - [2024-11-06T16:09:28.024+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-11-06T16:09:28.059+0000] {logging_mixin.py:190} INFO - [2024-11-06T16:09:28.058+0000] {dag.py:4138} INFO - Setting next_dagrun for cotahist_etl to 2024-11-06 00:00:00+00:00, run_after=2024-11-07 00:00:00+00:00
+[2024-11-06T16:09:28.094+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ETL.py took 0.217 seconds
+[2024-11-06T16:09:30.075+0000] {processor.py:186} INFO - Started process (PID=2606) to work on /opt/airflow/dags/ETL.py
+[2024-11-06T16:09:30.077+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ETL.py for tasks to queue
+[2024-11-06T16:09:30.079+0000] {logging_mixin.py:190} INFO - [2024-11-06T16:09:30.078+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/ETL.py
+[2024-11-06T16:09:30.177+0000] {processor.py:925} INFO - DAG(s) 'cotahist_etl' retrieved from /opt/airflow/dags/ETL.py
+[2024-11-06T16:09:30.209+0000] {logging_mixin.py:190} INFO - [2024-11-06T16:09:30.208+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-11-06T16:09:30.242+0000] {logging_mixin.py:190} INFO - [2024-11-06T16:09:30.242+0000] {dag.py:4138} INFO - Setting next_dagrun for cotahist_etl to 2024-11-06 00:00:00+00:00, run_after=2024-11-07 00:00:00+00:00
+[2024-11-06T16:09:30.276+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ETL.py took 0.212 seconds
+[2024-11-06T16:10:01.013+0000] {processor.py:186} INFO - Started process (PID=2669) to work on /opt/airflow/dags/ETL.py
+[2024-11-06T16:10:01.016+0000] {processor.py:914} INFO - Processing file /opt/airflow/dags/ETL.py for tasks to queue
+[2024-11-06T16:10:01.020+0000] {logging_mixin.py:190} INFO - [2024-11-06T16:10:01.019+0000] {dagbag.py:587} INFO - Filling up the DagBag from /opt/airflow/dags/ETL.py
+[2024-11-06T16:10:01.135+0000] {processor.py:925} INFO - DAG(s) 'cotahist_etl' retrieved from /opt/airflow/dags/ETL.py
+[2024-11-06T16:10:01.168+0000] {logging_mixin.py:190} INFO - [2024-11-06T16:10:01.167+0000] {dag.py:3211} INFO - Sync 1 DAGs
+[2024-11-06T16:10:01.205+0000] {logging_mixin.py:190} INFO - [2024-11-06T16:10:01.205+0000] {dag.py:4138} INFO - Setting next_dagrun for cotahist_etl to 2024-11-06 00:00:00+00:00, run_after=2024-11-07 00:00:00+00:00
+[2024-11-06T16:10:01.230+0000] {processor.py:208} INFO - Processing /opt/airflow/dags/ETL.py took 0.232 seconds

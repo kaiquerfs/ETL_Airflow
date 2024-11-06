@@ -1,0 +1,251 @@
+[2024-11-06T15:47:05.807+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-11-06T15:47:05.831+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: cotahist_etl.extract manual__2024-11-06T15:46:56.783485+00:00 [queued]>
+[2024-11-06T15:47:05.842+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: cotahist_etl.extract manual__2024-11-06T15:46:56.783485+00:00 [queued]>
+[2024-11-06T15:47:05.844+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2024-11-06T15:47:05.861+0000] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): extract> on 2024-11-06 15:46:56.783485+00:00
+[2024-11-06T15:47:05.874+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=547) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-11-06T15:47:05.876+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'cotahist_etl', 'extract', 'manual__2024-11-06T15:46:56.783485+00:00', '--job-id', '71', '--raw', '--subdir', 'DAGS_FOLDER/cargab3.py', '--cfg-path', '/tmp/tmpnulrigbt']
+[2024-11-06T15:47:05.878+0000] {standard_task_runner.py:72} INFO - Started process 549 to run task
+[2024-11-06T15:47:05.878+0000] {standard_task_runner.py:105} INFO - Job 71: Subtask extract
+[2024-11-06T15:47:05.945+0000] {task_command.py:467} INFO - Running <TaskInstance: cotahist_etl.extract manual__2024-11-06T15:46:56.783485+00:00 [running]> on host 65428f9e2553
+[2024-11-06T15:47:06.068+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='cotahist_etl' AIRFLOW_CTX_TASK_ID='extract' AIRFLOW_CTX_EXECUTION_DATE='2024-11-06T15:46:56.783485+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-11-06T15:46:56.783485+00:00'
+[2024-11-06T15:47:06.071+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2024-11-06T15:47:06.073+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2024-11-06T15:47:06.074+0000] {logging_mixin.py:190} INFO - Current task name:extract state:running start_date:2024-11-06 15:47:05.832265+00:00
+[2024-11-06T15:47:06.075+0000] {logging_mixin.py:190} INFO - Dag name:cotahist_etl and current dag run status:running
+[2024-11-06T15:47:06.076+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-11-06T15:47:06.078+0000] {cargab3.py:78} INFO - Iniciando a extração...
+[2024-11-06T15:47:06.080+0000] {cargab3.py:97} INFO - Processando arquivo: /opt/***/files/COTAHIST_A2022.txt
+[2024-11-06T15:47:06.632+0000] {cargab3.py:104} INFO - Lendo um bloco de dados...
+[2024-11-06T15:47:06.846+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T15:47:06.852+0000] {cargab3.py:18} INFO - Inserindo dados na tabela stage...
+[2024-11-06T15:47:10.473+0000] {cargab3.py:69} INFO - Chunk inserido com sucesso.
+[2024-11-06T15:47:10.906+0000] {cargab3.py:104} INFO - Lendo um bloco de dados...
+[2024-11-06T15:47:11.098+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T15:47:11.104+0000] {cargab3.py:18} INFO - Inserindo dados na tabela stage...
+[2024-11-06T15:47:13.651+0000] {cargab3.py:69} INFO - Chunk inserido com sucesso.
+[2024-11-06T15:47:14.191+0000] {cargab3.py:104} INFO - Lendo um bloco de dados...
+[2024-11-06T15:47:14.377+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T15:47:14.384+0000] {cargab3.py:18} INFO - Inserindo dados na tabela stage...
+[2024-11-06T15:47:18.856+0000] {cargab3.py:69} INFO - Chunk inserido com sucesso.
+[2024-11-06T15:47:19.450+0000] {cargab3.py:104} INFO - Lendo um bloco de dados...
+[2024-11-06T15:47:19.702+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T15:47:19.711+0000] {cargab3.py:18} INFO - Inserindo dados na tabela stage...
+[2024-11-06T15:47:56.812+0000] {job.py:239} ERROR - Job heartbeat failed with error
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3371, in _wrap_pool_connect
+    return fn()
+           ^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/impl.py", line 256, in _do_get
+    return self._create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 690, in __connect
+    with util.safe_reraise():
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: could not translate host name "postgres" to address: Temporary failure in name resolution
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/jobs/job.py", line 207, in heartbeat
+    self._merge_from(Job._fetch_from_db(self, session))
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/api_internal/internal_api_call.py", line 139, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 94, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/retries.py", line 93, in wrapped_function
+    for attempt in run_with_db_retries(max_retries=retries, logger=logger, **retry_kwargs):
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/tenacity/__init__.py", line 443, in __iter__
+    do = self.iter(retry_state=retry_state)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/tenacity/__init__.py", line 376, in iter
+    result = action(retry_state)
+             ^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/tenacity/__init__.py", line 418, in exc_check
+    raise retry_exc.reraise()
+          ^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/tenacity/__init__.py", line 185, in reraise
+    raise self.last_attempt.result()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/concurrent/futures/_base.py", line 449, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/usr/local/lib/python3.12/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/retries.py", line 102, in wrapped_function
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/jobs/job.py", line 335, in _fetch_from_db
+    session.merge(job)
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 3056, in merge
+    return self._merge(
+           ^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 3136, in _merge
+    merged = self.get(
+             ^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 2853, in get
+    return self._get_impl(
+           ^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 2975, in _get_impl
+    return db_load_fn(
+           ^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/loading.py", line 530, in load_on_pk_identity
+    session.execute(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 1716, in execute
+    conn = self._connection_for_bind(bind)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 1555, in _connection_for_bind
+    return self._transaction._connection_for_bind(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 750, in _connection_for_bind
+    conn = bind.connect()
+           ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/future/engine.py", line 412, in connect
+    return super(Engine, self).connect()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3325, in connect
+    return self._connection_cls(self, close_with_result=close_with_result)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 96, in __init__
+    else engine.raw_connection()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3404, in raw_connection
+    return self._wrap_pool_connect(self.pool.connect, _connection)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3374, in _wrap_pool_connect
+    Connection._handle_dbapi_exception_noconnection(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 2208, in _handle_dbapi_exception_noconnection
+    util.raise_(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3371, in _wrap_pool_connect
+    return fn()
+           ^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/impl.py", line 256, in _do_get
+    return self._create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 690, in __connect
+    with util.safe_reraise():
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) could not translate host name "postgres" to address: Temporary failure in name resolution
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-11-06T15:47:56.941+0000] {job.py:254} ERROR - Job heartbeat failed with error. Scheduler is in unhealthy state
+[2024-11-06T15:48:10.144+0000] {job.py:229} INFO - Heartbeat recovered after 54.17 seconds
+[2024-11-06T15:48:11.147+0000] {cargab3.py:69} INFO - Chunk inserido com sucesso.
+[2024-11-06T15:48:11.849+0000] {cargab3.py:104} INFO - Lendo um bloco de dados...
+[2024-11-06T15:48:15.034+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T15:48:15.055+0000] {cargab3.py:18} INFO - Inserindo dados na tabela stage...
+[2024-11-06T15:48:20.491+0000] {cargab3.py:69} INFO - Chunk inserido com sucesso.
+[2024-11-06T15:48:21.260+0000] {cargab3.py:104} INFO - Lendo um bloco de dados...
+[2024-11-06T15:48:21.550+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T15:48:21.575+0000] {cargab3.py:18} INFO - Inserindo dados na tabela stage...
+[2024-11-06T15:48:25.959+0000] {cargab3.py:69} INFO - Chunk inserido com sucesso.
+[2024-11-06T15:48:28.082+0000] {cargab3.py:104} INFO - Lendo um bloco de dados...
+[2024-11-06T15:48:28.281+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T15:48:28.290+0000] {cargab3.py:18} INFO - Inserindo dados na tabela stage...
+[2024-11-06T15:48:32.911+0000] {cargab3.py:69} INFO - Chunk inserido com sucesso.
+[2024-11-06T15:48:33.550+0000] {cargab3.py:104} INFO - Lendo um bloco de dados...
+[2024-11-06T15:48:33.817+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T15:48:33.825+0000] {cargab3.py:18} INFO - Inserindo dados na tabela stage...
+[2024-11-06T15:48:37.074+0000] {cargab3.py:69} INFO - Chunk inserido com sucesso.
+[2024-11-06T15:48:37.721+0000] {cargab3.py:104} INFO - Lendo um bloco de dados...
+[2024-11-06T15:48:37.905+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T15:48:37.911+0000] {cargab3.py:18} INFO - Inserindo dados na tabela stage...
+[2024-11-06T15:48:40.961+0000] {cargab3.py:69} INFO - Chunk inserido com sucesso.
+[2024-11-06T15:48:41.467+0000] {cargab3.py:104} INFO - Lendo um bloco de dados...
+[2024-11-06T15:48:41.655+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T15:48:41.662+0000] {cargab3.py:18} INFO - Inserindo dados na tabela stage...
+[2024-11-06T15:48:45.701+0000] {cargab3.py:69} INFO - Chunk inserido com sucesso.
+[2024-11-06T15:48:46.308+0000] {cargab3.py:104} INFO - Lendo um bloco de dados...
+[2024-11-06T15:48:46.559+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T15:48:46.571+0000] {cargab3.py:18} INFO - Inserindo dados na tabela stage...
+[2024-11-06T15:48:51.044+0000] {cargab3.py:69} INFO - Chunk inserido com sucesso.
+[2024-11-06T15:48:51.769+0000] {cargab3.py:104} INFO - Lendo um bloco de dados...
+[2024-11-06T15:48:51.960+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T15:48:51.968+0000] {cargab3.py:18} INFO - Inserindo dados na tabela stage...
+[2024-11-06T15:48:55.700+0000] {cargab3.py:69} INFO - Chunk inserido com sucesso.
+[2024-11-06T15:48:56.215+0000] {cargab3.py:104} INFO - Lendo um bloco de dados...
+[2024-11-06T15:48:56.416+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T15:48:56.422+0000] {cargab3.py:18} INFO - Inserindo dados na tabela stage...
+[2024-11-06T15:49:00.340+0000] {cargab3.py:69} INFO - Chunk inserido com sucesso.
+[2024-11-06T15:49:00.930+0000] {cargab3.py:104} INFO - Lendo um bloco de dados...
+[2024-11-06T15:49:01.116+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T15:49:01.122+0000] {cargab3.py:18} INFO - Inserindo dados na tabela stage...
+[2024-11-06T15:49:05.144+0000] {cargab3.py:69} INFO - Chunk inserido com sucesso.
+[2024-11-06T15:49:05.799+0000] {cargab3.py:104} INFO - Lendo um bloco de dados...
+[2024-11-06T15:49:06.017+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T15:49:06.025+0000] {cargab3.py:18} INFO - Inserindo dados na tabela stage...
+[2024-11-06T15:49:10.813+0000] {cargab3.py:69} INFO - Chunk inserido com sucesso.
+[2024-11-06T15:49:10.983+0000] {local_task_job_runner.py:341} WARNING - State of this instance has been externally set to removed. Terminating instance.
+[2024-11-06T15:49:11.020+0000] {local_task_job_runner.py:240} INFO - ::endgroup::
+[2024-11-06T15:49:11.034+0000] {process_utils.py:132} INFO - Sending 15 to group 549. PIDs of all processes in the group: [549]
+[2024-11-06T15:49:11.038+0000] {process_utils.py:87} INFO - Sending the signal 15 to group 549
+[2024-11-06T15:49:11.040+0000] {taskinstance.py:3083} ERROR - Received SIGTERM. Terminating subprocesses.
+[2024-11-06T15:49:11.091+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-11-06T15:49:11.175+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=549, status='terminated', exitcode=0, started='15:47:05') (549) terminated with exit code 0

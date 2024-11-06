@@ -1,0 +1,1473 @@
+[2024-11-05T23:34:57.943+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-11-05T23:34:57.958+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: cotahist_etl.extract manual__2024-11-05T23:34:53.085892+00:00 [queued]>
+[2024-11-05T23:34:57.967+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: cotahist_etl.extract manual__2024-11-05T23:34:53.085892+00:00 [queued]>
+[2024-11-05T23:34:57.968+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2024-11-05T23:34:57.990+0000] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): extract> on 2024-11-05 23:34:53.085892+00:00
+[2024-11-05T23:34:58.018+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'cotahist_etl', 'extract', 'manual__2024-11-05T23:34:53.085892+00:00', '--job-id', '24', '--raw', '--subdir', 'DAGS_FOLDER/cargab3.py', '--cfg-path', '/tmp/tmp4265pee9']
+[2024-11-05T23:34:58.005+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=588) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-11-05T23:34:58.028+0000] {standard_task_runner.py:105} INFO - Job 24: Subtask extract
+[2024-11-05T23:34:58.028+0000] {standard_task_runner.py:72} INFO - Started process 590 to run task
+[2024-11-05T23:34:58.176+0000] {task_command.py:467} INFO - Running <TaskInstance: cotahist_etl.extract manual__2024-11-05T23:34:53.085892+00:00 [running]> on host 0e811c25cd9f
+[2024-11-05T23:34:58.430+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='cotahist_etl' AIRFLOW_CTX_TASK_ID='extract' AIRFLOW_CTX_EXECUTION_DATE='2024-11-05T23:34:53.085892+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-11-05T23:34:53.085892+00:00'
+[2024-11-05T23:34:58.437+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2024-11-05T23:34:58.437+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2024-11-05T23:34:58.438+0000] {logging_mixin.py:190} INFO - Current task name:extract state:running start_date:2024-11-05 23:34:57.959405+00:00
+[2024-11-05T23:34:58.438+0000] {logging_mixin.py:190} INFO - Dag name:cotahist_etl and current dag run status:running
+[2024-11-05T23:34:58.438+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-11-05T23:34:58.443+0000] {cargab3.py:15} INFO - Iniciando a extração...
+[2024-11-05T23:34:58.446+0000] {cargab3.py:19} INFO - Caminhos absolutos dos arquivos: ['/opt/***/files/COTAHIST_A2022.txt', '/opt/***/files/COTAHIST_A2023.txt', '/opt/***/files/COTAHIST_A2024.txt']
+[2024-11-05T23:34:58.448+0000] {cargab3.py:38} INFO - Processando arquivo: /opt/***/files/COTAHIST_A2022.txt
+[2024-11-05T23:34:59.459+0000] {cargab3.py:45} INFO - Lendo um bloco de dados...
+[2024-11-05T23:34:59.462+0000] {cargab3.py:60} INFO - Antes da divisão - preco_abertura: 0    5970
+1    1542
+2    1080
+3    2500
+4     568
+Name: preco_abertura, dtype: int64
+[2024-11-05T23:34:59.472+0000] {cargab3.py:62} INFO - Depois da divisão - preco_abertura: 0    59.70
+1    15.42
+2    10.80
+3    25.00
+4     5.68
+Name: preco_abertura, dtype: float64
+[2024-11-05T23:34:59.478+0000] {cargab3.py:60} INFO - Antes da divisão - preco_maximo: 0    6088
+1    1554
+2    1147
+3    2505
+4     570
+Name: preco_maximo, dtype: int64
+[2024-11-05T23:34:59.480+0000] {cargab3.py:62} INFO - Depois da divisão - preco_maximo: 0    60.88
+1    15.54
+2    11.47
+3    25.05
+4     5.70
+Name: preco_maximo, dtype: float64
+[2024-11-05T23:34:59.482+0000] {cargab3.py:60} INFO - Antes da divisão - preco_minimo: 0    5727
+1    1515
+2    1071
+3    2428
+4     557
+Name: preco_minimo, dtype: int64
+[2024-11-05T23:34:59.483+0000] {cargab3.py:62} INFO - Depois da divisão - preco_minimo: 0    57.27
+1    15.15
+2    10.71
+3    24.28
+4     5.57
+Name: preco_minimo, dtype: float64
+[2024-11-05T23:34:59.484+0000] {cargab3.py:60} INFO - Antes da divisão - preco_medio: 0    5896
+1    1529
+2    1108
+3    2466
+4     568
+Name: preco_medio, dtype: int64
+[2024-11-05T23:34:59.486+0000] {cargab3.py:62} INFO - Depois da divisão - preco_medio: 0    58.96
+1    15.29
+2    11.08
+3    24.66
+4     5.68
+Name: preco_medio, dtype: float64
+[2024-11-05T23:34:59.487+0000] {cargab3.py:60} INFO - Antes da divisão - preco_ultimo_negocio: 0    5875
+1    1533
+2    1093
+3    2454
+4     570
+Name: preco_ultimo_negocio, dtype: int64
+[2024-11-05T23:34:59.488+0000] {cargab3.py:62} INFO - Depois da divisão - preco_ultimo_negocio: 0    58.75
+1    15.33
+2    10.93
+3    24.54
+4     5.70
+Name: preco_ultimo_negocio, dtype: float64
+[2024-11-05T23:34:59.489+0000] {cargab3.py:60} INFO - Antes da divisão - preco_melhor_oferta_compra: 0    5873
+1    1532
+2    1093
+3    2449
+4     557
+Name: preco_melhor_oferta_compra, dtype: int64
+[2024-11-05T23:34:59.490+0000] {cargab3.py:62} INFO - Depois da divisão - preco_melhor_oferta_compra: 0    58.73
+1    15.32
+2    10.93
+3    24.49
+4     5.57
+Name: preco_melhor_oferta_compra, dtype: float64
+[2024-11-05T23:34:59.491+0000] {cargab3.py:60} INFO - Antes da divisão - preco_melhor_oferta_venda: 0    5875
+1    1533
+2    1111
+3    2454
+4     570
+Name: preco_melhor_oferta_venda, dtype: int64
+[2024-11-05T23:34:59.493+0000] {cargab3.py:62} INFO - Depois da divisão - preco_melhor_oferta_venda: 0    58.75
+1    15.33
+2    11.11
+3    24.54
+4     5.70
+Name: preco_melhor_oferta_venda, dtype: float64
+[2024-11-05T23:35:00.278+0000] {cargab3.py:45} INFO - Lendo um bloco de dados...
+[2024-11-05T23:35:00.286+0000] {cargab3.py:60} INFO - Antes da divisão - preco_abertura: 10000       307
+10001     10460
+10002     52235
+10003     15069
+10004    148700
+Name: preco_abertura, dtype: int64
+[2024-11-05T23:35:00.292+0000] {cargab3.py:62} INFO - Depois da divisão - preco_abertura: 10000       3.07
+10001     104.60
+10002     522.35
+10003     150.69
+10004    1487.00
+Name: preco_abertura, dtype: float64
+[2024-11-05T23:35:00.294+0000] {cargab3.py:60} INFO - Antes da divisão - preco_maximo: 10000       311
+10001     10460
+10002     52235
+10003     15069
+10004    151410
+Name: preco_maximo, dtype: int64
+[2024-11-05T23:35:00.295+0000] {cargab3.py:62} INFO - Depois da divisão - preco_maximo: 10000       3.11
+10001     104.60
+10002     522.35
+10003     150.69
+10004    1514.10
+Name: preco_maximo, dtype: float64
+[2024-11-05T23:35:00.296+0000] {cargab3.py:60} INFO - Antes da divisão - preco_minimo: 10000       283
+10001     10460
+10002     52235
+10003     14950
+10004    147600
+Name: preco_minimo, dtype: int64
+[2024-11-05T23:35:00.297+0000] {cargab3.py:62} INFO - Depois da divisão - preco_minimo: 10000       2.83
+10001     104.60
+10002     522.35
+10003     149.50
+10004    1476.00
+Name: preco_minimo, dtype: float64
+[2024-11-05T23:35:00.298+0000] {cargab3.py:60} INFO - Antes da divisão - preco_medio: 10000       293
+10001     10460
+10002     52235
+10003     15009
+10004    149612
+Name: preco_medio, dtype: int64
+[2024-11-05T23:35:00.299+0000] {cargab3.py:62} INFO - Depois da divisão - preco_medio: 10000       2.93
+10001     104.60
+10002     522.35
+10003     150.09
+10004    1496.12
+Name: preco_medio, dtype: float64
+[2024-11-05T23:35:00.300+0000] {cargab3.py:60} INFO - Antes da divisão - preco_ultimo_negocio: 10000       289
+10001     10460
+10002     52235
+10003     14950
+10004    150238
+Name: preco_ultimo_negocio, dtype: int64
+[2024-11-05T23:35:00.303+0000] {cargab3.py:62} INFO - Depois da divisão - preco_ultimo_negocio: 10000       2.89
+10001     104.60
+10002     522.35
+10003     149.50
+10004    1502.38
+Name: preco_ultimo_negocio, dtype: float64
+[2024-11-05T23:35:00.304+0000] {cargab3.py:60} INFO - Antes da divisão - preco_melhor_oferta_compra: 10000       288
+10001      7500
+10002         0
+10003     14814
+10004    150093
+Name: preco_melhor_oferta_compra, dtype: int64
+[2024-11-05T23:35:00.306+0000] {cargab3.py:62} INFO - Depois da divisão - preco_melhor_oferta_compra: 10000       2.88
+10001      75.00
+10002       0.00
+10003     148.14
+10004    1500.93
+Name: preco_melhor_oferta_compra, dtype: float64
+[2024-11-05T23:35:00.313+0000] {cargab3.py:60} INFO - Antes da divisão - preco_melhor_oferta_venda: 10000      289
+10001        0
+10002    53500
+10003    14999
+10004        0
+Name: preco_melhor_oferta_venda, dtype: int64
+[2024-11-05T23:35:00.315+0000] {cargab3.py:62} INFO - Depois da divisão - preco_melhor_oferta_venda: 10000      2.89
+10001      0.00
+10002    535.00
+10003    149.99
+10004      0.00
+Name: preco_melhor_oferta_venda, dtype: float64
+[2024-11-05T23:35:00.807+0000] {cargab3.py:45} INFO - Lendo um bloco de dados...
+[2024-11-05T23:35:00.808+0000] {cargab3.py:60} INFO - Antes da divisão - preco_abertura: 20000     8820
+20001     9460
+20002     9099
+20003    12188
+20004     8848
+Name: preco_abertura, dtype: int64
+[2024-11-05T23:35:00.810+0000] {cargab3.py:62} INFO - Depois da divisão - preco_abertura: 20000     88.20
+20001     94.60
+20002     90.99
+20003    121.88
+20004     88.48
+Name: preco_abertura, dtype: float64
+[2024-11-05T23:35:00.813+0000] {cargab3.py:60} INFO - Antes da divisão - preco_maximo: 20000     8900
+20001     9460
+20002     9130
+20003    12331
+20004     8848
+Name: preco_maximo, dtype: int64
+[2024-11-05T23:35:00.817+0000] {cargab3.py:62} INFO - Depois da divisão - preco_maximo: 20000     89.00
+20001     94.60
+20002     91.30
+20003    123.31
+20004     88.48
+Name: preco_maximo, dtype: float64
+[2024-11-05T23:35:00.819+0000] {cargab3.py:60} INFO - Antes da divisão - preco_minimo: 20000     8736
+20001     9390
+20002     8832
+20003    12188
+20004     8848
+Name: preco_minimo, dtype: int64
+[2024-11-05T23:35:00.821+0000] {cargab3.py:62} INFO - Depois da divisão - preco_minimo: 20000     87.36
+20001     93.90
+20002     88.32
+20003    121.88
+20004     88.48
+Name: preco_minimo, dtype: float64
+[2024-11-05T23:35:00.823+0000] {cargab3.py:60} INFO - Antes da divisão - preco_medio: 20000     8792
+20001     9421
+20002     9051
+20003    12300
+20004     8848
+Name: preco_medio, dtype: int64
+[2024-11-05T23:35:00.825+0000] {cargab3.py:62} INFO - Depois da divisão - preco_medio: 20000     87.92
+20001     94.21
+20002     90.51
+20003    123.00
+20004     88.48
+Name: preco_medio, dtype: float64
+[2024-11-05T23:35:00.826+0000] {cargab3.py:60} INFO - Antes da divisão - preco_ultimo_negocio: 20000     8826
+20001     9420
+20002     9130
+20003    12247
+20004     8848
+Name: preco_ultimo_negocio, dtype: int64
+[2024-11-05T23:35:00.828+0000] {cargab3.py:62} INFO - Depois da divisão - preco_ultimo_negocio: 20000     88.26
+20001     94.20
+20002     91.30
+20003    122.47
+20004     88.48
+Name: preco_ultimo_negocio, dtype: float64
+[2024-11-05T23:35:00.831+0000] {cargab3.py:60} INFO - Antes da divisão - preco_melhor_oferta_compra: 20000     8821
+20001     9401
+20002     9065
+20003    12217
+20004     8815
+Name: preco_melhor_oferta_compra, dtype: int64
+[2024-11-05T23:35:00.834+0000] {cargab3.py:62} INFO - Depois da divisão - preco_melhor_oferta_compra: 20000     88.21
+20001     94.01
+20002     90.65
+20003    122.17
+20004     88.15
+Name: preco_melhor_oferta_compra, dtype: float64
+[2024-11-05T23:35:00.835+0000] {cargab3.py:60} INFO - Antes da divisão - preco_melhor_oferta_venda: 20000     8826
+20001     9429
+20002     9130
+20003    12247
+20004     8848
+Name: preco_melhor_oferta_venda, dtype: int64
+[2024-11-05T23:35:00.837+0000] {cargab3.py:62} INFO - Depois da divisão - preco_melhor_oferta_venda: 20000     88.26
+20001     94.29
+20002     91.30
+20003    122.47
+20004     88.48
+Name: preco_melhor_oferta_venda, dtype: float64
+[2024-11-05T23:35:01.585+0000] {cargab3.py:45} INFO - Lendo um bloco de dados...
+[2024-11-05T23:35:01.586+0000] {cargab3.py:60} INFO - Antes da divisão - preco_abertura: 30000     6392
+30001      611
+30002    19660
+30003     9811
+30004     5430
+Name: preco_abertura, dtype: int64
+[2024-11-05T23:35:01.588+0000] {cargab3.py:62} INFO - Depois da divisão - preco_abertura: 30000     63.92
+30001      6.11
+30002    196.60
+30003     98.11
+30004     54.30
+Name: preco_abertura, dtype: float64
+[2024-11-05T23:35:01.589+0000] {cargab3.py:60} INFO - Antes da divisão - preco_maximo: 30000     6393
+30001      618
+30002    19660
+30003     9855
+30004     5430
+Name: preco_maximo, dtype: int64
+[2024-11-05T23:35:01.591+0000] {cargab3.py:62} INFO - Depois da divisão - preco_maximo: 30000     63.93
+30001      6.18
+30002    196.60
+30003     98.55
+30004     54.30
+Name: preco_maximo, dtype: float64
+[2024-11-05T23:35:01.593+0000] {cargab3.py:60} INFO - Antes da divisão - preco_minimo: 30000     6392
+30001      605
+30002    19660
+30003     9660
+30004     5430
+Name: preco_minimo, dtype: int64
+[2024-11-05T23:35:01.594+0000] {cargab3.py:62} INFO - Depois da divisão - preco_minimo: 30000     63.92
+30001      6.05
+30002    196.60
+30003     96.60
+30004     54.30
+Name: preco_minimo, dtype: float64
+[2024-11-05T23:35:01.596+0000] {cargab3.py:60} INFO - Antes da divisão - preco_medio: 30000     6392
+30001      612
+30002    19660
+30003     9745
+30004     5430
+Name: preco_medio, dtype: int64
+[2024-11-05T23:35:01.597+0000] {cargab3.py:62} INFO - Depois da divisão - preco_medio: 30000     63.92
+30001      6.12
+30002    196.60
+30003     97.45
+30004     54.30
+Name: preco_medio, dtype: float64
+[2024-11-05T23:35:01.598+0000] {cargab3.py:60} INFO - Antes da divisão - preco_ultimo_negocio: 30000     6393
+30001      610
+30002    19660
+30003     9769
+30004     5430
+Name: preco_ultimo_negocio, dtype: int64
+[2024-11-05T23:35:01.599+0000] {cargab3.py:62} INFO - Depois da divisão - preco_ultimo_negocio: 30000     63.93
+30001      6.10
+30002    196.60
+30003     97.69
+30004     54.30
+Name: preco_ultimo_negocio, dtype: float64
+[2024-11-05T23:35:01.601+0000] {cargab3.py:60} INFO - Antes da divisão - preco_melhor_oferta_compra: 30000    6000
+30001     610
+30002       0
+30003    9759
+30004    5069
+Name: preco_melhor_oferta_compra, dtype: int64
+[2024-11-05T23:35:01.602+0000] {cargab3.py:62} INFO - Depois da divisão - preco_melhor_oferta_compra: 30000    60.00
+30001     6.10
+30002     0.00
+30003    97.59
+30004    50.69
+Name: preco_melhor_oferta_compra, dtype: float64
+[2024-11-05T23:35:01.603+0000] {cargab3.py:60} INFO - Antes da divisão - preco_melhor_oferta_venda: 30000     6350
+30001      612
+30002    28100
+30003     9769
+30004        0
+Name: preco_melhor_oferta_venda, dtype: int64
+[2024-11-05T23:35:01.604+0000] {cargab3.py:62} INFO - Depois da divisão - preco_melhor_oferta_venda: 30000     63.50
+30001      6.12
+30002    281.00
+30003     97.69
+30004      0.00
+Name: preco_melhor_oferta_venda, dtype: float64
+[2024-11-05T23:35:02.295+0000] {cargab3.py:45} INFO - Lendo um bloco de dados...
+[2024-11-05T23:35:02.297+0000] {cargab3.py:60} INFO - Antes da divisão - preco_abertura: 40000     481
+40001    5915
+40002     702
+40003    3257
+40004    2350
+Name: preco_abertura, dtype: int64
+[2024-11-05T23:35:02.298+0000] {cargab3.py:62} INFO - Depois da divisão - preco_abertura: 40000     4.81
+40001    59.15
+40002     7.02
+40003    32.57
+40004    23.50
+Name: preco_abertura, dtype: float64
+[2024-11-05T23:35:02.300+0000] {cargab3.py:60} INFO - Antes da divisão - preco_maximo: 40000     482
+40001    5915
+40002     707
+40003    3257
+40004    2350
+Name: preco_maximo, dtype: int64
+[2024-11-05T23:35:02.301+0000] {cargab3.py:62} INFO - Depois da divisão - preco_maximo: 40000     4.82
+40001    59.15
+40002     7.07
+40003    32.57
+40004    23.50
+Name: preco_maximo, dtype: float64
+[2024-11-05T23:35:02.302+0000] {cargab3.py:60} INFO - Antes da divisão - preco_minimo: 40000     481
+40001    5915
+40002     684
+40003    3117
+40004    2237
+Name: preco_minimo, dtype: int64
+[2024-11-05T23:35:02.303+0000] {cargab3.py:62} INFO - Depois da divisão - preco_minimo: 40000     4.81
+40001    59.15
+40002     6.84
+40003    31.17
+40004    22.37
+Name: preco_minimo, dtype: float64
+[2024-11-05T23:35:02.304+0000] {cargab3.py:60} INFO - Antes da divisão - preco_medio: 40000     481
+40001    5915
+40002     693
+40003    3173
+40004    2271
+Name: preco_medio, dtype: int64
+[2024-11-05T23:35:02.305+0000] {cargab3.py:62} INFO - Depois da divisão - preco_medio: 40000     4.81
+40001    59.15
+40002     6.93
+40003    31.73
+40004    22.71
+Name: preco_medio, dtype: float64
+[2024-11-05T23:35:02.306+0000] {cargab3.py:60} INFO - Antes da divisão - preco_ultimo_negocio: 40000     482
+40001    5915
+40002     688
+40003    3151
+40004    2290
+Name: preco_ultimo_negocio, dtype: int64
+[2024-11-05T23:35:02.308+0000] {cargab3.py:62} INFO - Depois da divisão - preco_ultimo_negocio: 40000     4.82
+40001    59.15
+40002     6.88
+40003    31.51
+40004    22.90
+Name: preco_ultimo_negocio, dtype: float64
+[2024-11-05T23:35:02.309+0000] {cargab3.py:60} INFO - Antes da divisão - preco_melhor_oferta_compra: 40000     455
+40001    5500
+40002     688
+40003    3151
+40004    2273
+Name: preco_melhor_oferta_compra, dtype: int64
+[2024-11-05T23:35:02.310+0000] {cargab3.py:62} INFO - Depois da divisão - preco_melhor_oferta_compra: 40000     4.55
+40001    55.00
+40002     6.88
+40003    31.51
+40004    22.73
+Name: preco_melhor_oferta_compra, dtype: float64
+[2024-11-05T23:35:02.311+0000] {cargab3.py:60} INFO - Antes da divisão - preco_melhor_oferta_venda: 40000     492
+40001    5915
+40002     703
+40003    3203
+40004    2290
+Name: preco_melhor_oferta_venda, dtype: int64
+[2024-11-05T23:35:02.312+0000] {cargab3.py:62} INFO - Depois da divisão - preco_melhor_oferta_venda: 40000     4.92
+40001    59.15
+40002     7.03
+40003    32.03
+40004    22.90
+Name: preco_melhor_oferta_venda, dtype: float64
+[2024-11-05T23:35:02.915+0000] {cargab3.py:45} INFO - Lendo um bloco de dados...
+[2024-11-05T23:35:02.917+0000] {cargab3.py:60} INFO - Antes da divisão - preco_abertura: 50000    35245
+50001     6300
+50002    40000
+50003      750
+50004      202
+Name: preco_abertura, dtype: int64
+[2024-11-05T23:35:02.918+0000] {cargab3.py:62} INFO - Depois da divisão - preco_abertura: 50000    352.45
+50001     63.00
+50002    400.00
+50003      7.50
+50004      2.02
+Name: preco_abertura, dtype: float64
+[2024-11-05T23:35:02.920+0000] {cargab3.py:60} INFO - Antes da divisão - preco_maximo: 50000    35245
+50001     6300
+50002    40000
+50003      790
+50004      211
+Name: preco_maximo, dtype: int64
+[2024-11-05T23:35:02.922+0000] {cargab3.py:62} INFO - Depois da divisão - preco_maximo: 50000    352.45
+50001     63.00
+50002    400.00
+50003      7.90
+50004      2.11
+Name: preco_maximo, dtype: float64
+[2024-11-05T23:35:02.924+0000] {cargab3.py:60} INFO - Antes da divisão - preco_minimo: 50000    35175
+50001     5915
+50002    37232
+50003      748
+50004      202
+Name: preco_minimo, dtype: int64
+[2024-11-05T23:35:02.925+0000] {cargab3.py:62} INFO - Depois da divisão - preco_minimo: 50000    351.75
+50001     59.15
+50002    372.32
+50003      7.48
+50004      2.02
+Name: preco_minimo, dtype: float64
+[2024-11-05T23:35:02.927+0000] {cargab3.py:60} INFO - Antes da divisão - preco_medio: 50000    35222
+50001     5915
+50002    38616
+50003      770
+50004      205
+Name: preco_medio, dtype: int64
+[2024-11-05T23:35:02.928+0000] {cargab3.py:62} INFO - Depois da divisão - preco_medio: 50000    352.22
+50001     59.15
+50002    386.16
+50003      7.70
+50004      2.05
+Name: preco_medio, dtype: float64
+[2024-11-05T23:35:02.929+0000] {cargab3.py:60} INFO - Antes da divisão - preco_ultimo_negocio: 50000    35245
+50001     5915
+50002    37232
+50003      790
+50004      205
+Name: preco_ultimo_negocio, dtype: int64
+[2024-11-05T23:35:02.931+0000] {cargab3.py:62} INFO - Depois da divisão - preco_ultimo_negocio: 50000    352.45
+50001     59.15
+50002    372.32
+50003      7.90
+50004      2.05
+Name: preco_ultimo_negocio, dtype: float64
+[2024-11-05T23:35:02.932+0000] {cargab3.py:60} INFO - Antes da divisão - preco_melhor_oferta_compra: 50000    29292
+50001     5885
+50002        0
+50003      790
+50004      204
+Name: preco_melhor_oferta_compra, dtype: int64
+[2024-11-05T23:35:02.934+0000] {cargab3.py:62} INFO - Depois da divisão - preco_melhor_oferta_compra: 50000    292.92
+50001     58.85
+50002      0.00
+50003      7.90
+50004      2.04
+Name: preco_melhor_oferta_compra, dtype: float64
+[2024-11-05T23:35:02.935+0000] {cargab3.py:60} INFO - Antes da divisão - preco_melhor_oferta_venda: 50000       0
+50001    6300
+50002       0
+50003     797
+50004     205
+Name: preco_melhor_oferta_venda, dtype: int64
+[2024-11-05T23:35:02.936+0000] {cargab3.py:62} INFO - Depois da divisão - preco_melhor_oferta_venda: 50000     0.00
+50001    63.00
+50002     0.00
+50003     7.97
+50004     2.05
+Name: preco_melhor_oferta_venda, dtype: float64
+[2024-11-05T23:35:03.309+0000] {cargab3.py:45} INFO - Lendo um bloco de dados...
+[2024-11-05T23:35:03.310+0000] {cargab3.py:60} INFO - Antes da divisão - preco_abertura: 60000    1715
+60001    2071
+60002    1158
+60003     631
+60004    7100
+Name: preco_abertura, dtype: int64
+[2024-11-05T23:35:03.311+0000] {cargab3.py:62} INFO - Depois da divisão - preco_abertura: 60000    17.15
+60001    20.71
+60002    11.58
+60003     6.31
+60004    71.00
+Name: preco_abertura, dtype: float64
+[2024-11-05T23:35:03.312+0000] {cargab3.py:60} INFO - Antes da divisão - preco_maximo: 60000    1719
+60001    2071
+60002    1169
+60003     670
+60004    7180
+Name: preco_maximo, dtype: int64
+[2024-11-05T23:35:03.314+0000] {cargab3.py:62} INFO - Depois da divisão - preco_maximo: 60000    17.19
+60001    20.71
+60002    11.69
+60003     6.70
+60004    71.80
+Name: preco_maximo, dtype: float64
+[2024-11-05T23:35:03.315+0000] {cargab3.py:60} INFO - Antes da divisão - preco_minimo: 60000    1557
+60001    2011
+60002    1152
+60003     611
+60004    7100
+Name: preco_minimo, dtype: int64
+[2024-11-05T23:35:03.316+0000] {cargab3.py:62} INFO - Depois da divisão - preco_minimo: 60000    15.57
+60001    20.11
+60002    11.52
+60003     6.11
+60004    71.00
+Name: preco_minimo, dtype: float64
+[2024-11-05T23:35:03.317+0000] {cargab3.py:60} INFO - Antes da divisão - preco_medio: 60000    1598
+60001    2037
+60002    1157
+60003     635
+60004    7169
+Name: preco_medio, dtype: int64
+[2024-11-05T23:35:03.319+0000] {cargab3.py:62} INFO - Depois da divisão - preco_medio: 60000    15.98
+60001    20.37
+60002    11.57
+60003     6.35
+60004    71.69
+Name: preco_medio, dtype: float64
+[2024-11-05T23:35:03.320+0000] {cargab3.py:60} INFO - Antes da divisão - preco_ultimo_negocio: 60000    1575
+60001    2049
+60002    1159
+60003     618
+60004    7100
+Name: preco_ultimo_negocio, dtype: int64
+[2024-11-05T23:35:03.321+0000] {cargab3.py:62} INFO - Depois da divisão - preco_ultimo_negocio: 60000    15.75
+60001    20.49
+60002    11.59
+60003     6.18
+60004    71.00
+Name: preco_ultimo_negocio, dtype: float64
+[2024-11-05T23:35:03.322+0000] {cargab3.py:60} INFO - Antes da divisão - preco_melhor_oferta_compra: 60000    1575
+60001    2011
+60002    1155
+60003     613
+60004    6917
+Name: preco_melhor_oferta_compra, dtype: int64
+[2024-11-05T23:35:03.323+0000] {cargab3.py:62} INFO - Depois da divisão - preco_melhor_oferta_compra: 60000    15.75
+60001    20.11
+60002    11.55
+60003     6.13
+60004    69.17
+Name: preco_melhor_oferta_compra, dtype: float64
+[2024-11-05T23:35:03.324+0000] {cargab3.py:60} INFO - Antes da divisão - preco_melhor_oferta_venda: 60000    1585
+60001    2060
+60002    1160
+60003     625
+60004    7100
+Name: preco_melhor_oferta_venda, dtype: int64
+[2024-11-05T23:35:03.325+0000] {cargab3.py:62} INFO - Depois da divisão - preco_melhor_oferta_venda: 60000    15.85
+60001    20.60
+60002    11.60
+60003     6.25
+60004    71.00
+Name: preco_melhor_oferta_venda, dtype: float64
+[2024-11-05T23:35:03.711+0000] {cargab3.py:45} INFO - Lendo um bloco de dados...
+[2024-11-05T23:35:03.712+0000] {cargab3.py:60} INFO - Antes da divisão - preco_abertura: 70000    11500
+70001     5677
+70002     7364
+70003    82000
+70004     1175
+Name: preco_abertura, dtype: int64
+[2024-11-05T23:35:03.713+0000] {cargab3.py:62} INFO - Depois da divisão - preco_abertura: 70000    115.00
+70001     56.77
+70002     73.64
+70003    820.00
+70004     11.75
+Name: preco_abertura, dtype: float64
+[2024-11-05T23:35:03.714+0000] {cargab3.py:60} INFO - Antes da divisão - preco_maximo: 70000    11500
+70001     5681
+70002     7368
+70003    82000
+70004     1204
+Name: preco_maximo, dtype: int64
+[2024-11-05T23:35:03.715+0000] {cargab3.py:62} INFO - Depois da divisão - preco_maximo: 70000    115.00
+70001     56.81
+70002     73.68
+70003    820.00
+70004     12.04
+Name: preco_maximo, dtype: float64
+[2024-11-05T23:35:03.716+0000] {cargab3.py:60} INFO - Antes da divisão - preco_minimo: 70000    11266
+70001     5600
+70002     7205
+70003    80500
+70004     1175
+Name: preco_minimo, dtype: int64
+[2024-11-05T23:35:03.717+0000] {cargab3.py:62} INFO - Depois da divisão - preco_minimo: 70000    112.66
+70001     56.00
+70002     72.05
+70003    805.00
+70004     11.75
+Name: preco_minimo, dtype: float64
+[2024-11-05T23:35:03.718+0000] {cargab3.py:60} INFO - Antes da divisão - preco_medio: 70000    11434
+70001     5650
+70002     7300
+70003    80630
+70004     1195
+Name: preco_medio, dtype: int64
+[2024-11-05T23:35:03.719+0000] {cargab3.py:62} INFO - Depois da divisão - preco_medio: 70000    114.34
+70001     56.50
+70002     73.00
+70003    806.30
+70004     11.95
+Name: preco_medio, dtype: float64
+[2024-11-05T23:35:03.720+0000] {cargab3.py:60} INFO - Antes da divisão - preco_ultimo_negocio: 70000    11397
+70001     5638
+70002     7303
+70003    80510
+70004     1204
+Name: preco_ultimo_negocio, dtype: int64
+[2024-11-05T23:35:03.721+0000] {cargab3.py:62} INFO - Depois da divisão - preco_ultimo_negocio: 70000    113.97
+70001     56.38
+70002     73.03
+70003    805.10
+70004     12.04
+Name: preco_ultimo_negocio, dtype: float64
+[2024-11-05T23:35:03.722+0000] {cargab3.py:60} INFO - Antes da divisão - preco_melhor_oferta_compra: 70000    11370
+70001     5616
+70002     7295
+70003    80510
+70004     1200
+Name: preco_melhor_oferta_compra, dtype: int64
+[2024-11-05T23:35:03.723+0000] {cargab3.py:62} INFO - Depois da divisão - preco_melhor_oferta_compra: 70000    113.70
+70001     56.16
+70002     72.95
+70003    805.10
+70004     12.00
+Name: preco_melhor_oferta_compra, dtype: float64
+[2024-11-05T23:35:03.724+0000] {cargab3.py:60} INFO - Antes da divisão - preco_melhor_oferta_venda: 70000    11397
+70001     5638
+70002     7338
+70003    81500
+70004     1202
+Name: preco_melhor_oferta_venda, dtype: int64
+[2024-11-05T23:35:03.725+0000] {cargab3.py:62} INFO - Depois da divisão - preco_melhor_oferta_venda: 70000    113.97
+70001     56.38
+70002     73.38
+70003    815.00
+70004     12.02
+Name: preco_melhor_oferta_venda, dtype: float64
+[2024-11-05T23:35:04.157+0000] {cargab3.py:45} INFO - Lendo um bloco de dados...
+[2024-11-05T23:35:04.159+0000] {cargab3.py:60} INFO - Antes da divisão - preco_abertura: 80000    98142
+80001     5610
+80002     4612
+80003     2571
+80004     2363
+Name: preco_abertura, dtype: int64
+[2024-11-05T23:35:04.161+0000] {cargab3.py:62} INFO - Depois da divisão - preco_abertura: 80000    981.42
+80001     56.10
+80002     46.12
+80003     25.71
+80004     23.63
+Name: preco_abertura, dtype: float64
+[2024-11-05T23:35:04.163+0000] {cargab3.py:60} INFO - Antes da divisão - preco_maximo: 80000    98142
+80001     5610
+80002     4629
+80003     2620
+80004     2420
+Name: preco_maximo, dtype: int64
+[2024-11-05T23:35:04.166+0000] {cargab3.py:62} INFO - Depois da divisão - preco_maximo: 80000    981.42
+80001     56.10
+80002     46.29
+80003     26.20
+80004     24.20
+Name: preco_maximo, dtype: float64
+[2024-11-05T23:35:04.167+0000] {cargab3.py:60} INFO - Antes da divisão - preco_minimo: 80000    98142
+80001     5269
+80002     4561
+80003     2571
+80004     2363
+Name: preco_minimo, dtype: int64
+[2024-11-05T23:35:04.169+0000] {cargab3.py:62} INFO - Depois da divisão - preco_minimo: 80000    981.42
+80001     52.69
+80002     45.61
+80003     25.71
+80004     23.63
+Name: preco_minimo, dtype: float64
+[2024-11-05T23:35:04.171+0000] {cargab3.py:60} INFO - Antes da divisão - preco_medio: 80000    98142
+80001     5337
+80002     4617
+80003     2575
+80004     2414
+Name: preco_medio, dtype: int64
+[2024-11-05T23:35:04.173+0000] {cargab3.py:62} INFO - Depois da divisão - preco_medio: 80000    981.42
+80001     53.37
+80002     46.17
+80003     25.75
+80004     24.14
+Name: preco_medio, dtype: float64
+[2024-11-05T23:35:04.174+0000] {cargab3.py:60} INFO - Antes da divisão - preco_ultimo_negocio: 80000    98142
+80001     5354
+80002     4577
+80003     2620
+80004     2420
+Name: preco_ultimo_negocio, dtype: int64
+[2024-11-05T23:35:04.176+0000] {cargab3.py:62} INFO - Depois da divisão - preco_ultimo_negocio: 80000    981.42
+80001     53.54
+80002     45.77
+80003     26.20
+80004     24.20
+Name: preco_ultimo_negocio, dtype: float64
+[2024-11-05T23:35:04.178+0000] {cargab3.py:60} INFO - Antes da divisão - preco_melhor_oferta_compra: 80000    96913
+80001     5321
+80002     4500
+80003     2580
+80004     2360
+Name: preco_melhor_oferta_compra, dtype: int64
+[2024-11-05T23:35:04.180+0000] {cargab3.py:62} INFO - Depois da divisão - preco_melhor_oferta_compra: 80000    969.13
+80001     53.21
+80002     45.00
+80003     25.80
+80004     23.60
+Name: preco_melhor_oferta_compra, dtype: float64
+[2024-11-05T23:35:04.181+0000] {cargab3.py:60} INFO - Antes da divisão - preco_melhor_oferta_venda: 80000    104000
+80001      5380
+80002      5600
+80003      2800
+80004      2430
+Name: preco_melhor_oferta_venda, dtype: int64
+[2024-11-05T23:35:04.183+0000] {cargab3.py:62} INFO - Depois da divisão - preco_melhor_oferta_venda: 80000    1040.0
+80001      53.8
+80002      56.0
+80003      28.0
+80004      24.3
+Name: preco_melhor_oferta_venda, dtype: float64
+[2024-11-05T23:35:04.609+0000] {cargab3.py:45} INFO - Lendo um bloco de dados...
+[2024-11-05T23:35:04.611+0000] {cargab3.py:60} INFO - Antes da divisão - preco_abertura: 90000     504
+90001    2164
+90002    1730
+90003    1369
+90004     500
+Name: preco_abertura, dtype: int64
+[2024-11-05T23:35:04.612+0000] {cargab3.py:62} INFO - Depois da divisão - preco_abertura: 90000     5.04
+90001    21.64
+90002    17.30
+90003    13.69
+90004     5.00
+Name: preco_abertura, dtype: float64
+[2024-11-05T23:35:04.613+0000] {cargab3.py:60} INFO - Antes da divisão - preco_maximo: 90000     512
+90001    2211
+90002    1761
+90003    1405
+90004     504
+Name: preco_maximo, dtype: int64
+[2024-11-05T23:35:04.614+0000] {cargab3.py:62} INFO - Depois da divisão - preco_maximo: 90000     5.12
+90001    22.11
+90002    17.61
+90003    14.05
+90004     5.04
+Name: preco_maximo, dtype: float64
+[2024-11-05T23:35:04.615+0000] {cargab3.py:60} INFO - Antes da divisão - preco_minimo: 90000     502
+90001    2106
+90002    1720
+90003    1359
+90004     491
+Name: preco_minimo, dtype: int64
+[2024-11-05T23:35:04.616+0000] {cargab3.py:62} INFO - Depois da divisão - preco_minimo: 90000     5.02
+90001    21.06
+90002    17.20
+90003    13.59
+90004     4.91
+Name: preco_minimo, dtype: float64
+[2024-11-05T23:35:04.617+0000] {cargab3.py:60} INFO - Antes da divisão - preco_medio: 90000     506
+90001    2144
+90002    1748
+90003    1383
+90004     494
+Name: preco_medio, dtype: int64
+[2024-11-05T23:35:04.618+0000] {cargab3.py:62} INFO - Depois da divisão - preco_medio: 90000     5.06
+90001    21.44
+90002    17.48
+90003    13.83
+90004     4.94
+Name: preco_medio, dtype: float64
+[2024-11-05T23:35:04.619+0000] {cargab3.py:60} INFO - Antes da divisão - preco_ultimo_negocio: 90000     512
+90001    2145
+90002    1751
+90003    1365
+90004     498
+Name: preco_ultimo_negocio, dtype: int64
+[2024-11-05T23:35:04.621+0000] {cargab3.py:62} INFO - Depois da divisão - preco_ultimo_negocio: 90000     5.12
+90001    21.45
+90002    17.51
+90003    13.65
+90004     4.98
+Name: preco_ultimo_negocio, dtype: float64
+[2024-11-05T23:35:04.622+0000] {cargab3.py:60} INFO - Antes da divisão - preco_melhor_oferta_compra: 90000     502
+90001    2145
+90002    1751
+90003    1365
+90004     491
+Name: preco_melhor_oferta_compra, dtype: int64
+[2024-11-05T23:35:04.623+0000] {cargab3.py:62} INFO - Depois da divisão - preco_melhor_oferta_compra: 90000     5.02
+90001    21.45
+90002    17.51
+90003    13.65
+90004     4.91
+Name: preco_melhor_oferta_compra, dtype: float64
+[2024-11-05T23:35:04.624+0000] {cargab3.py:60} INFO - Antes da divisão - preco_melhor_oferta_venda: 90000     512
+90001    2156
+90002    1752
+90003    1388
+90004     498
+Name: preco_melhor_oferta_venda, dtype: int64
+[2024-11-05T23:35:04.625+0000] {cargab3.py:62} INFO - Depois da divisão - preco_melhor_oferta_venda: 90000     5.12
+90001    21.56
+90002    17.52
+90003    13.88
+90004     4.98
+Name: preco_melhor_oferta_venda, dtype: float64
+[2024-11-05T23:35:05.099+0000] {cargab3.py:45} INFO - Lendo um bloco de dados...
+[2024-11-05T23:35:05.102+0000] {cargab3.py:60} INFO - Antes da divisão - preco_abertura: 100000     2748
+100001     7926
+100002      660
+100003    14154
+100004     3920
+Name: preco_abertura, dtype: int64
+[2024-11-05T23:35:05.110+0000] {cargab3.py:62} INFO - Depois da divisão - preco_abertura: 100000     27.48
+100001     79.26
+100002      6.60
+100003    141.54
+100004     39.20
+Name: preco_abertura, dtype: float64
+[2024-11-05T23:35:05.125+0000] {cargab3.py:60} INFO - Antes da divisão - preco_maximo: 100000     2791
+100001     7948
+100002      678
+100003    14154
+100004     3928
+Name: preco_maximo, dtype: int64
+[2024-11-05T23:35:05.143+0000] {cargab3.py:62} INFO - Depois da divisão - preco_maximo: 100000     27.91
+100001     79.48
+100002      6.78
+100003    141.54
+100004     39.28
+Name: preco_maximo, dtype: float64
+[2024-11-05T23:35:05.146+0000] {cargab3.py:60} INFO - Antes da divisão - preco_minimo: 100000     2711
+100001     7863
+100002      648
+100003    14154
+100004     3920
+Name: preco_minimo, dtype: int64
+[2024-11-05T23:35:05.174+0000] {cargab3.py:62} INFO - Depois da divisão - preco_minimo: 100000     27.11
+100001     78.63
+100002      6.48
+100003    141.54
+100004     39.20
+Name: preco_minimo, dtype: float64
+[2024-11-05T23:35:05.189+0000] {cargab3.py:60} INFO - Antes da divisão - preco_medio: 100000     2747
+100001     7930
+100002      659
+100003    14154
+100004     3926
+Name: preco_medio, dtype: int64
+[2024-11-05T23:35:05.199+0000] {cargab3.py:62} INFO - Depois da divisão - preco_medio: 100000     27.47
+100001     79.30
+100002      6.59
+100003    141.54
+100004     39.26
+Name: preco_medio, dtype: float64
+[2024-11-05T23:35:05.201+0000] {cargab3.py:60} INFO - Antes da divisão - preco_ultimo_negocio: 100000     2750
+100001     7899
+100002      657
+100003    14154
+100004     3928
+Name: preco_ultimo_negocio, dtype: int64
+[2024-11-05T23:35:05.204+0000] {cargab3.py:62} INFO - Depois da divisão - preco_ultimo_negocio: 100000     27.50
+100001     78.99
+100002      6.57
+100003    141.54
+100004     39.28
+Name: preco_ultimo_negocio, dtype: float64
+[2024-11-05T23:35:05.206+0000] {cargab3.py:60} INFO - Antes da divisão - preco_melhor_oferta_compra: 100000    2750
+100001    7800
+100002     656
+100003       0
+100004       0
+Name: preco_melhor_oferta_compra, dtype: int64
+[2024-11-05T23:35:05.210+0000] {cargab3.py:62} INFO - Depois da divisão - preco_melhor_oferta_compra: 100000    27.50
+100001    78.00
+100002     6.56
+100003     0.00
+100004     0.00
+Name: preco_melhor_oferta_compra, dtype: float64
+[2024-11-05T23:35:05.212+0000] {cargab3.py:60} INFO - Antes da divisão - preco_melhor_oferta_venda: 100000     2751
+100001     8400
+100002      657
+100003    14700
+100004        0
+Name: preco_melhor_oferta_venda, dtype: int64
+[2024-11-05T23:35:05.214+0000] {cargab3.py:62} INFO - Depois da divisão - preco_melhor_oferta_venda: 100000     27.51
+100001     84.00
+100002      6.57
+100003    147.00
+100004      0.00
+Name: preco_melhor_oferta_venda, dtype: float64
+[2024-11-05T23:35:05.657+0000] {cargab3.py:45} INFO - Lendo um bloco de dados...
+[2024-11-05T23:35:05.658+0000] {cargab3.py:60} INFO - Antes da divisão - preco_abertura: 110000    31496
+110001     3920
+110002     3363
+110003      999
+110004      300
+Name: preco_abertura, dtype: int64
+[2024-11-05T23:35:05.659+0000] {cargab3.py:62} INFO - Depois da divisão - preco_abertura: 110000    314.96
+110001     39.20
+110002     33.63
+110003      9.99
+110004      3.00
+Name: preco_abertura, dtype: float64
+[2024-11-05T23:35:05.660+0000] {cargab3.py:60} INFO - Antes da divisão - preco_maximo: 110000    31640
+110001     3948
+110002     3363
+110003     1033
+110004      305
+Name: preco_maximo, dtype: int64
+[2024-11-05T23:35:05.662+0000] {cargab3.py:62} INFO - Depois da divisão - preco_maximo: 110000    316.40
+110001     39.48
+110002     33.63
+110003     10.33
+110004      3.05
+Name: preco_maximo, dtype: float64
+[2024-11-05T23:35:05.663+0000] {cargab3.py:60} INFO - Antes da divisão - preco_minimo: 110000    31360
+110001     3876
+110002     3360
+110003      997
+110004      295
+Name: preco_minimo, dtype: int64
+[2024-11-05T23:35:05.665+0000] {cargab3.py:62} INFO - Depois da divisão - preco_minimo: 110000    313.60
+110001     38.76
+110002     33.60
+110003      9.97
+110004      2.95
+Name: preco_minimo, dtype: float64
+[2024-11-05T23:35:05.667+0000] {cargab3.py:60} INFO - Antes da divisão - preco_medio: 110000    31546
+110001     3887
+110002     3361
+110003     1016
+110004      299
+Name: preco_medio, dtype: int64
+[2024-11-05T23:35:05.668+0000] {cargab3.py:62} INFO - Depois da divisão - preco_medio: 110000    315.46
+110001     38.87
+110002     33.61
+110003     10.16
+110004      2.99
+Name: preco_medio, dtype: float64
+[2024-11-05T23:35:05.669+0000] {cargab3.py:60} INFO - Antes da divisão - preco_ultimo_negocio: 110000    31640
+110001     3876
+110002     3361
+110003     1026
+110004      301
+Name: preco_ultimo_negocio, dtype: int64
+[2024-11-05T23:35:05.670+0000] {cargab3.py:62} INFO - Depois da divisão - preco_ultimo_negocio: 110000    316.40
+110001     38.76
+110002     33.61
+110003     10.26
+110004      3.01
+Name: preco_ultimo_negocio, dtype: float64
+[2024-11-05T23:35:05.670+0000] {cargab3.py:60} INFO - Antes da divisão - preco_melhor_oferta_compra: 110000    30000
+110001     3876
+110002        0
+110003     1025
+110004      301
+Name: preco_melhor_oferta_compra, dtype: int64
+[2024-11-05T23:35:05.672+0000] {cargab3.py:62} INFO - Depois da divisão - preco_melhor_oferta_compra: 110000    300.00
+110001     38.76
+110002      0.00
+110003     10.25
+110004      3.01
+Name: preco_melhor_oferta_compra, dtype: float64
+[2024-11-05T23:35:05.672+0000] {cargab3.py:60} INFO - Antes da divisão - preco_melhor_oferta_venda: 110000    31640
+110001     3940
+110002        0
+110003     1026
+110004      303
+Name: preco_melhor_oferta_venda, dtype: int64
+[2024-11-05T23:35:05.674+0000] {cargab3.py:62} INFO - Depois da divisão - preco_melhor_oferta_venda: 110000    316.40
+110001     39.40
+110002      0.00
+110003     10.26
+110004      3.03
+Name: preco_melhor_oferta_venda, dtype: float64
+[2024-11-05T23:35:06.139+0000] {cargab3.py:45} INFO - Lendo um bloco de dados...
+[2024-11-05T23:35:06.142+0000] {cargab3.py:60} INFO - Antes da divisão - preco_abertura: 120000      161
+120001    33298
+120002    20911
+120003      146
+120004      657
+Name: preco_abertura, dtype: int64
+[2024-11-05T23:35:06.144+0000] {cargab3.py:62} INFO - Depois da divisão - preco_abertura: 120000      1.61
+120001    332.98
+120002    209.11
+120003      1.46
+120004      6.57
+Name: preco_abertura, dtype: float64
+[2024-11-05T23:35:06.146+0000] {cargab3.py:60} INFO - Antes da divisão - preco_maximo: 120000      172
+120001    33652
+120002    20911
+120003      147
+120004      678
+Name: preco_maximo, dtype: int64
+[2024-11-05T23:35:06.148+0000] {cargab3.py:62} INFO - Depois da divisão - preco_maximo: 120000      1.72
+120001    336.52
+120002    209.11
+120003      1.47
+120004      6.78
+Name: preco_maximo, dtype: float64
+[2024-11-05T23:35:06.150+0000] {cargab3.py:60} INFO - Antes da divisão - preco_minimo: 120000      160
+120001    33298
+120002    20911
+120003      141
+120004      657
+Name: preco_minimo, dtype: int64
+[2024-11-05T23:35:06.152+0000] {cargab3.py:62} INFO - Depois da divisão - preco_minimo: 120000      1.60
+120001    332.98
+120002    209.11
+120003      1.41
+120004      6.57
+Name: preco_minimo, dtype: float64
+[2024-11-05T23:35:06.154+0000] {cargab3.py:60} INFO - Antes da divisão - preco_medio: 120000      167
+120001    33646
+120002    20911
+120003      143
+120004      663
+Name: preco_medio, dtype: int64
+[2024-11-05T23:35:06.156+0000] {cargab3.py:62} INFO - Depois da divisão - preco_medio: 120000      1.67
+120001    336.46
+120002    209.11
+120003      1.43
+120004      6.63
+Name: preco_medio, dtype: float64
+[2024-11-05T23:35:06.159+0000] {cargab3.py:60} INFO - Antes da divisão - preco_ultimo_negocio: 120000      171
+120001    33652
+120002    20911
+120003      141
+120004      678
+Name: preco_ultimo_negocio, dtype: int64
+[2024-11-05T23:35:06.161+0000] {cargab3.py:62} INFO - Depois da divisão - preco_ultimo_negocio: 120000      1.71
+120001    336.52
+120002    209.11
+120003      1.41
+120004      6.78
+Name: preco_ultimo_negocio, dtype: float64
+[2024-11-05T23:35:06.162+0000] {cargab3.py:60} INFO - Antes da divisão - preco_melhor_oferta_compra: 120000    169
+120001      0
+120002      0
+120003    141
+120004    670
+Name: preco_melhor_oferta_compra, dtype: int64
+[2024-11-05T23:35:06.164+0000] {cargab3.py:62} INFO - Depois da divisão - preco_melhor_oferta_compra: 120000    1.69
+120001    0.00
+120002    0.00
+120003    1.41
+120004    6.70
+Name: preco_melhor_oferta_compra, dtype: float64
+[2024-11-05T23:35:06.165+0000] {cargab3.py:60} INFO - Antes da divisão - preco_melhor_oferta_venda: 120000      171
+120001    36000
+120002        0
+120003      142
+120004      698
+Name: preco_melhor_oferta_venda, dtype: int64
+[2024-11-05T23:35:06.167+0000] {cargab3.py:62} INFO - Depois da divisão - preco_melhor_oferta_venda: 120000      1.71
+120001    360.00
+120002      0.00
+120003      1.42
+120004      6.98
+Name: preco_melhor_oferta_venda, dtype: float64
+[2024-11-05T23:35:06.654+0000] {cargab3.py:45} INFO - Lendo um bloco de dados...
+[2024-11-05T23:35:06.655+0000] {cargab3.py:60} INFO - Antes da divisão - preco_abertura: 130000    10049
+130001     7302
+130002    15505
+130003     4708
+130004     9094
+Name: preco_abertura, dtype: int64
+[2024-11-05T23:35:06.658+0000] {cargab3.py:62} INFO - Depois da divisão - preco_abertura: 130000    100.49
+130001     73.02
+130002    155.05
+130003     47.08
+130004     90.94
+Name: preco_abertura, dtype: float64
+[2024-11-05T23:35:06.660+0000] {cargab3.py:60} INFO - Antes da divisão - preco_maximo: 130000    10126
+130001     7471
+130002    16099
+130003     4708
+130004     9125
+Name: preco_maximo, dtype: int64
+[2024-11-05T23:35:06.661+0000] {cargab3.py:62} INFO - Depois da divisão - preco_maximo: 130000    101.26
+130001     74.71
+130002    160.99
+130003     47.08
+130004     91.25
+Name: preco_maximo, dtype: float64
+[2024-11-05T23:35:06.663+0000] {cargab3.py:60} INFO - Antes da divisão - preco_minimo: 130000    10049
+130001     7250
+130002    15503
+130003     4500
+130004     9023
+Name: preco_minimo, dtype: int64
+[2024-11-05T23:35:06.665+0000] {cargab3.py:62} INFO - Depois da divisão - preco_minimo: 130000    100.49
+130001     72.50
+130002    155.03
+130003     45.00
+130004     90.23
+Name: preco_minimo, dtype: float64
+[2024-11-05T23:35:06.667+0000] {cargab3.py:60} INFO - Antes da divisão - preco_medio: 130000    10087
+130001     7255
+130002    15883
+130003     4554
+130004     9043
+Name: preco_medio, dtype: int64
+[2024-11-05T23:35:06.670+0000] {cargab3.py:62} INFO - Depois da divisão - preco_medio: 130000    100.87
+130001     72.55
+130002    158.83
+130003     45.54
+130004     90.43
+Name: preco_medio, dtype: float64
+[2024-11-05T23:35:06.671+0000] {cargab3.py:60} INFO - Antes da divisão - preco_ultimo_negocio: 130000    10055
+130001     7275
+130002    15900
+130003     4500
+130004     9093
+Name: preco_ultimo_negocio, dtype: int64
+[2024-11-05T23:35:06.674+0000] {cargab3.py:62} INFO - Depois da divisão - preco_ultimo_negocio: 130000    100.55
+130001     72.75
+130002    159.00
+130003     45.00
+130004     90.93
+Name: preco_ultimo_negocio, dtype: float64
+[2024-11-05T23:35:06.675+0000] {cargab3.py:60} INFO - Antes da divisão - preco_melhor_oferta_compra: 130000    10051
+130001     7250
+130002    15855
+130003     4495
+130004     9036
+Name: preco_melhor_oferta_compra, dtype: int64
+[2024-11-05T23:35:06.677+0000] {cargab3.py:62} INFO - Depois da divisão - preco_melhor_oferta_compra: 130000    100.51
+130001     72.50
+130002    158.55
+130003     44.95
+130004     90.36
+Name: preco_melhor_oferta_compra, dtype: float64
+[2024-11-05T23:35:06.678+0000] {cargab3.py:60} INFO - Antes da divisão - preco_melhor_oferta_venda: 130000    10055
+130001     7275
+130002    16149
+130003     4500
+130004     9093
+Name: preco_melhor_oferta_venda, dtype: int64
+[2024-11-05T23:35:06.679+0000] {cargab3.py:62} INFO - Depois da divisão - preco_melhor_oferta_venda: 130000    100.55
+130001     72.75
+130002    161.49
+130003     45.00
+130004     90.93
+Name: preco_melhor_oferta_venda, dtype: float64
+[2024-11-05T23:35:07.148+0000] {cargab3.py:45} INFO - Lendo um bloco de dados...
+[2024-11-05T23:35:07.149+0000] {cargab3.py:60} INFO - Antes da divisão - preco_abertura: 140000    1350
+140001     365
+140002     705
+140003    1039
+140004    1385
+Name: preco_abertura, dtype: int64
+[2024-11-05T23:35:07.150+0000] {cargab3.py:62} INFO - Depois da divisão - preco_abertura: 140000    13.50
+140001     3.65
+140002     7.05
+140003    10.39
+140004    13.85
+Name: preco_abertura, dtype: float64
+[2024-11-05T23:35:07.151+0000] {cargab3.py:60} INFO - Antes da divisão - preco_maximo: 140000    1383
+140001     376
+140002     709
+140003    1039
+140004    1700
+Name: preco_maximo, dtype: int64
+[2024-11-05T23:35:07.153+0000] {cargab3.py:62} INFO - Depois da divisão - preco_maximo: 140000    13.83
+140001     3.76
+140002     7.09
+140003    10.39
+140004    17.00
+Name: preco_maximo, dtype: float64
+[2024-11-05T23:35:07.154+0000] {cargab3.py:60} INFO - Antes da divisão - preco_minimo: 140000    1349
+140001     355
+140002     705
+140003     903
+140004    1385
+Name: preco_minimo, dtype: int64
+[2024-11-05T23:35:07.155+0000] {cargab3.py:62} INFO - Depois da divisão - preco_minimo: 140000    13.49
+140001     3.55
+140002     7.05
+140003     9.03
+140004    13.85
+Name: preco_minimo, dtype: float64
+[2024-11-05T23:35:07.156+0000] {cargab3.py:60} INFO - Antes da divisão - preco_medio: 140000    1365
+140001     366
+140002     705
+140003     942
+140004    1481
+Name: preco_medio, dtype: int64
+[2024-11-05T23:35:07.158+0000] {cargab3.py:62} INFO - Depois da divisão - preco_medio: 140000    13.65
+140001     3.66
+140002     7.05
+140003     9.42
+140004    14.81
+Name: preco_medio, dtype: float64
+[2024-11-05T23:35:07.159+0000] {cargab3.py:60} INFO - Antes da divisão - preco_ultimo_negocio: 140000    1362
+140001     367
+140002     709
+140003     936
+140004    1700
+Name: preco_ultimo_negocio, dtype: int64
+[2024-11-05T23:35:07.160+0000] {cargab3.py:62} INFO - Depois da divisão - preco_ultimo_negocio: 140000    13.62
+140001     3.67
+140002     7.09
+140003     9.36
+140004    17.00
+Name: preco_ultimo_negocio, dtype: float64
+[2024-11-05T23:35:07.162+0000] {cargab3.py:60} INFO - Antes da divisão - preco_melhor_oferta_compra: 140000    1362
+140001     367
+140002     671
+140003     936
+140004    1321
+Name: preco_melhor_oferta_compra, dtype: int64
+[2024-11-05T23:35:07.163+0000] {cargab3.py:62} INFO - Depois da divisão - preco_melhor_oferta_compra: 140000    13.62
+140001     3.67
+140002     6.71
+140003     9.36
+140004    13.21
+Name: preco_melhor_oferta_compra, dtype: float64
+[2024-11-05T23:35:07.164+0000] {cargab3.py:60} INFO - Antes da divisão - preco_melhor_oferta_venda: 140000    1365
+140001     368
+140002     700
+140003     947
+140004    1696
+Name: preco_melhor_oferta_venda, dtype: int64
+[2024-11-05T23:35:07.165+0000] {cargab3.py:62} INFO - Depois da divisão - preco_melhor_oferta_venda: 140000    13.65
+140001     3.68
+140002     7.00
+140003     9.47
+140004    16.96
+Name: preco_melhor_oferta_venda, dtype: float64
+[2024-11-05T23:35:07.573+0000] {cargab3.py:45} INFO - Lendo um bloco de dados...
+[2024-11-05T23:35:07.574+0000] {cargab3.py:60} INFO - Antes da divisão - preco_abertura: 150000     4500
+150001    10003
+150002     7697
+150003     9035
+150004     9790
+Name: preco_abertura, dtype: int64
+[2024-11-05T23:35:07.576+0000] {cargab3.py:62} INFO - Depois da divisão - preco_abertura: 150000     45.00
+150001    100.03
+150002     76.97
+150003     90.35
+150004     97.90
+Name: preco_abertura, dtype: float64
+[2024-11-05T23:35:07.577+0000] {cargab3.py:60} INFO - Antes da divisão - preco_maximo: 150000     4533
+150001    10193
+150002     7697
+150003     9150
+150004     9790
+Name: preco_maximo, dtype: int64
+[2024-11-05T23:35:07.579+0000] {cargab3.py:62} INFO - Depois da divisão - preco_maximo: 150000     45.33
+150001    101.93
+150002     76.97
+150003     91.50
+150004     97.90
+Name: preco_maximo, dtype: float64
+[2024-11-05T23:35:07.580+0000] {cargab3.py:60} INFO - Antes da divisão - preco_minimo: 150000     4500
+150001    10002
+150002     7453
+150003     8990
+150004     9651
+Name: preco_minimo, dtype: int64
+[2024-11-05T23:35:07.581+0000] {cargab3.py:62} INFO - Depois da divisão - preco_minimo: 150000     45.00
+150001    100.02
+150002     74.53
+150003     89.90
+150004     96.51
+Name: preco_minimo, dtype: float64
+[2024-11-05T23:35:07.583+0000] {cargab3.py:60} INFO - Antes da divisão - preco_medio: 150000     4508
+150001    10106
+150002     7498
+150003     9071
+150004     9692
+Name: preco_medio, dtype: int64
+[2024-11-05T23:35:07.584+0000] {cargab3.py:62} INFO - Depois da divisão - preco_medio: 150000     45.08
+150001    101.06
+150002     74.98
+150003     90.71
+150004     96.92
+Name: preco_medio, dtype: float64
+[2024-11-05T23:35:07.586+0000] {cargab3.py:60} INFO - Antes da divisão - preco_ultimo_negocio: 150000     4515
+150001    10100
+150002     7470
+150003     9134
+150004     9668
+Name: preco_ultimo_negocio, dtype: int64
+[2024-11-05T23:35:07.588+0000] {cargab3.py:62} INFO - Depois da divisão - preco_ultimo_negocio: 150000     45.15
+150001    101.00
+150002     74.70
+150003     91.34
+150004     96.68
+Name: preco_ultimo_negocio, dtype: float64
+[2024-11-05T23:35:07.589+0000] {cargab3.py:60} INFO - Antes da divisão - preco_melhor_oferta_compra: 150000     4515
+150001    10099
+150002     7470
+150003     9080
+150004     9668
+Name: preco_melhor_oferta_compra, dtype: int64
+[2024-11-05T23:35:07.590+0000] {cargab3.py:62} INFO - Depois da divisão - preco_melhor_oferta_compra: 150000     45.15
+150001    100.99
+150002     74.70
+150003     90.80
+150004     96.68
+Name: preco_melhor_oferta_compra, dtype: float64
+[2024-11-05T23:35:07.591+0000] {cargab3.py:60} INFO - Antes da divisão - preco_melhor_oferta_venda: 150000     4533
+150001    10100
+150002     7500
+150003     9134
+150004     9680
+Name: preco_melhor_oferta_venda, dtype: int64
+[2024-11-05T23:35:07.592+0000] {cargab3.py:62} INFO - Depois da divisão - preco_melhor_oferta_venda: 150000     45.33
+150001    101.00
+150002     75.00
+150003     91.34
+150004     96.80
+Name: preco_melhor_oferta_venda, dtype: float64
+[2024-11-05T23:35:08.097+0000] {cargab3.py:45} INFO - Lendo um bloco de dados...
+[2024-11-05T23:35:08.100+0000] {cargab3.py:60} INFO - Antes da divisão - preco_abertura: 160000     2850
+160001    11997
+160002      703
+160003      495
+160004     3939
+Name: preco_abertura, dtype: int64
+[2024-11-05T23:35:08.102+0000] {cargab3.py:62} INFO - Depois da divisão - preco_abertura: 160000     28.50
+160001    119.97
+160002      7.03
+160003      4.95
+160004     39.39
+Name: preco_abertura, dtype: float64
+[2024-11-05T23:35:08.103+0000] {cargab3.py:60} INFO - Antes da divisão - preco_maximo: 160000     2884
+160001    11997
+160002      717
+160003      534
+160004     4070
+Name: preco_maximo, dtype: int64
+[2024-11-05T23:35:08.104+0000] {cargab3.py:62} INFO - Depois da divisão - preco_maximo: 160000     28.84
+160001    119.97
+160002      7.17
+160003      5.34
+160004     40.70
+Name: preco_maximo, dtype: float64
+[2024-11-05T23:35:08.105+0000] {cargab3.py:60} INFO - Antes da divisão - preco_minimo: 160000     2850
+160001    11997
+160002      691
+160003      495
+160004     3901
+Name: preco_minimo, dtype: int64
+[2024-11-05T23:35:08.106+0000] {cargab3.py:62} INFO - Depois da divisão - preco_minimo: 160000     28.50
+160001    119.97
+160002      6.91
+160003      4.95
+160004     39.01
+Name: preco_minimo, dtype: float64
+[2024-11-05T23:35:08.107+0000] {cargab3.py:60} INFO - Antes da divisão - preco_medio: 160000     2867
+160001    11997
+160002      699
+160003      520
+160004     4007
+Name: preco_medio, dtype: int64
+[2024-11-05T23:35:08.108+0000] {cargab3.py:62} INFO - Depois da divisão - preco_medio: 160000     28.67
+160001    119.97
+160002      6.99
+160003      5.20
+160004     40.07
+Name: preco_medio, dtype: float64
+[2024-11-05T23:35:08.109+0000] {cargab3.py:60} INFO - Antes da divisão - preco_ultimo_negocio: 160000     2884
+160001    11997
+160002      701
+160003      530
+160004     4061
+Name: preco_ultimo_negocio, dtype: int64
+[2024-11-05T23:35:08.110+0000] {cargab3.py:62} INFO - Depois da divisão - preco_ultimo_negocio: 160000     28.84
+160001    119.97
+160002      7.01
+160003      5.30
+160004     40.61
+Name: preco_ultimo_negocio, dtype: float64
+[2024-11-05T23:35:08.111+0000] {cargab3.py:60} INFO - Antes da divisão - preco_melhor_oferta_compra: 160000        0
+160001    11953
+160002      701
+160003      529
+160004     4050
+Name: preco_melhor_oferta_compra, dtype: int64
+[2024-11-05T23:35:08.112+0000] {cargab3.py:62} INFO - Depois da divisão - preco_melhor_oferta_compra: 160000      0.00
+160001    119.53
+160002      7.01
+160003      5.29
+160004     40.50
+Name: preco_melhor_oferta_compra, dtype: float64
+[2024-11-05T23:35:08.114+0000] {cargab3.py:60} INFO - Antes da divisão - preco_melhor_oferta_venda: 160000     2917
+160001    16000
+160002      718
+160003      530
+160004     4061
+Name: preco_melhor_oferta_venda, dtype: int64
+[2024-11-05T23:35:08.116+0000] {cargab3.py:62} INFO - Depois da divisão - preco_melhor_oferta_venda: 160000     29.17
+160001    160.00
+160002      7.18
+160003      5.30
+160004     40.61
+Name: preco_melhor_oferta_venda, dtype: float64
+[2024-11-05T23:35:08.147+0000] {local_task_job_runner.py:341} WARNING - State of this instance has been externally set to failed. Terminating instance.
+[2024-11-05T23:35:08.149+0000] {local_task_job_runner.py:240} INFO - ::endgroup::
+[2024-11-05T23:35:08.154+0000] {process_utils.py:132} INFO - Sending 15 to group 590. PIDs of all processes in the group: [590]
+[2024-11-05T23:35:08.155+0000] {process_utils.py:87} INFO - Sending the signal 15 to group 590
+[2024-11-05T23:35:08.157+0000] {taskinstance.py:3083} ERROR - Received SIGTERM. Terminating subprocesses.
+[2024-11-05T23:35:08.252+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-11-05T23:35:08.289+0000] {process_utils.py:80} INFO - Process psutil.Process(pid=590, status='terminated', exitcode=0, started='23:34:57') (590) terminated with exit code 0

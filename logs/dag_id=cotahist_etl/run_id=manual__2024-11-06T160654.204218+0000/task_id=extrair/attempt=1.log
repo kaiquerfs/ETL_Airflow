@@ -1,0 +1,55 @@
+[2024-11-06T16:07:08.416+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-11-06T16:07:08.460+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: cotahist_etl.extrair manual__2024-11-06T16:06:54.204218+00:00 [queued]>
+[2024-11-06T16:07:08.479+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: cotahist_etl.extrair manual__2024-11-06T16:06:54.204218+00:00 [queued]>
+[2024-11-06T16:07:08.480+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2024-11-06T16:07:08.516+0000] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): extrair> on 2024-11-06 16:06:54.204218+00:00
+[2024-11-06T16:07:08.544+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=802) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-11-06T16:07:08.549+0000] {standard_task_runner.py:72} INFO - Started process 806 to run task
+[2024-11-06T16:07:08.550+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'cotahist_etl', 'extrair', 'manual__2024-11-06T16:06:54.204218+00:00', '--job-id', '78', '--raw', '--subdir', 'DAGS_FOLDER/ETL.py', '--cfg-path', '/tmp/tmpbpxipxv_']
+[2024-11-06T16:07:08.553+0000] {standard_task_runner.py:105} INFO - Job 78: Subtask extrair
+[2024-11-06T16:07:08.648+0000] {task_command.py:467} INFO - Running <TaskInstance: cotahist_etl.extrair manual__2024-11-06T16:06:54.204218+00:00 [running]> on host 65428f9e2553
+[2024-11-06T16:07:08.769+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='cotahist_etl' AIRFLOW_CTX_TASK_ID='extrair' AIRFLOW_CTX_EXECUTION_DATE='2024-11-06T16:06:54.204218+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-11-06T16:06:54.204218+00:00'
+[2024-11-06T16:07:08.773+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2024-11-06T16:07:08.775+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2024-11-06T16:07:08.776+0000] {logging_mixin.py:190} INFO - Current task name:extrair state:running start_date:2024-11-06 16:07:08.461919+00:00
+[2024-11-06T16:07:08.777+0000] {logging_mixin.py:190} INFO - Dag name:cotahist_etl and current dag run status:running
+[2024-11-06T16:07:08.777+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-11-06T16:07:09.712+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T16:07:15.958+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T16:07:22.939+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T16:07:27.046+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T16:07:31.964+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T16:07:38.487+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T16:07:43.537+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T16:07:48.793+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T16:07:54.501+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T16:07:59.489+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T16:08:04.446+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T16:08:10.167+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T16:08:15.765+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T16:08:20.485+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T16:08:25.340+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T16:08:31.662+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T16:08:36.507+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T16:08:41.739+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T16:08:47.918+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T16:08:53.592+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T16:08:58.282+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T16:09:03.185+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T16:09:08.323+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T16:09:12.763+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T16:09:17.853+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T16:09:25.425+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T16:09:30.667+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T16:09:35.299+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T16:09:40.872+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T16:09:45.171+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T16:09:50.362+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T16:09:55.915+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T16:10:01.649+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T16:10:06.561+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T16:10:11.785+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T16:10:16.499+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T16:10:21.943+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
