@@ -1,0 +1,344 @@
+[2024-11-06T18:10:43.847+0000] {local_task_job_runner.py:123} INFO - ::group::Pre task execution logs
+[2024-11-06T18:10:43.871+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: cotahist_etl.extrair manual__2024-11-06T18:10:39.608404+00:00 [queued]>
+[2024-11-06T18:10:43.880+0000] {taskinstance.py:2603} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: cotahist_etl.extrair manual__2024-11-06T18:10:39.608404+00:00 [queued]>
+[2024-11-06T18:10:43.882+0000] {taskinstance.py:2856} INFO - Starting attempt 1 of 1
+[2024-11-06T18:10:43.899+0000] {taskinstance.py:2879} INFO - Executing <Task(PythonOperator): extrair> on 2024-11-06 18:10:39.608404+00:00
+[2024-11-06T18:10:43.915+0000] {warnings.py:112} WARNING - /home/***/.local/lib/python3.12/site-packages/***/task/task_runner/standard_task_runner.py:70: DeprecationWarning: This process (pid=268) is multi-threaded, use of fork() may lead to deadlocks in the child.
+  pid = os.fork()
+
+[2024-11-06T18:10:43.918+0000] {standard_task_runner.py:104} INFO - Running: ['***', 'tasks', 'run', 'cotahist_etl', 'extrair', 'manual__2024-11-06T18:10:39.608404+00:00', '--job-id', '14', '--raw', '--subdir', 'DAGS_FOLDER/ETL.py', '--cfg-path', '/tmp/tmpb5jjcs71']
+[2024-11-06T18:10:43.919+0000] {standard_task_runner.py:72} INFO - Started process 270 to run task
+[2024-11-06T18:10:43.920+0000] {standard_task_runner.py:105} INFO - Job 14: Subtask extrair
+[2024-11-06T18:10:43.986+0000] {task_command.py:467} INFO - Running <TaskInstance: cotahist_etl.extrair manual__2024-11-06T18:10:39.608404+00:00 [running]> on host b4976cff1a61
+[2024-11-06T18:10:44.141+0000] {taskinstance.py:3122} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='cotahist_etl' AIRFLOW_CTX_TASK_ID='extrair' AIRFLOW_CTX_EXECUTION_DATE='2024-11-06T18:10:39.608404+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2024-11-06T18:10:39.608404+00:00'
+[2024-11-06T18:10:44.143+0000] {logging_mixin.py:190} INFO - Task instance is in running state
+[2024-11-06T18:10:44.144+0000] {logging_mixin.py:190} INFO -  Previous state of the Task instance: queued
+[2024-11-06T18:10:44.144+0000] {logging_mixin.py:190} INFO - Current task name:extrair state:running start_date:2024-11-06 18:10:43.872202+00:00
+[2024-11-06T18:10:44.145+0000] {logging_mixin.py:190} INFO - Dag name:cotahist_etl and current dag run status:running
+[2024-11-06T18:10:44.146+0000] {taskinstance.py:731} INFO - ::endgroup::
+[2024-11-06T18:10:45.077+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T18:10:49.618+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T18:10:53.926+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T18:10:59.317+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T18:11:05.648+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T18:11:12.571+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T18:11:18.203+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T18:11:22.657+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T18:11:27.195+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T18:11:33.715+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T18:11:41.007+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T18:11:47.350+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T18:11:52.218+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T18:11:57.596+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T18:12:03.743+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T18:12:10.809+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T18:12:15.987+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T18:12:21.076+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T18:12:25.866+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T18:12:30.529+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T18:12:35.083+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T18:12:40.957+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T18:12:48.484+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T18:12:53.479+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T18:12:58.066+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T18:13:03.348+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T18:13:07.891+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T18:13:12.704+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T18:13:19.328+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T18:13:24.979+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T18:13:29.286+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T18:13:34.223+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T18:13:41.113+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T18:13:45.107+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T18:13:49.670+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T18:13:53.593+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T18:13:58.057+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T18:14:02.305+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T18:14:07.476+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T18:14:13.514+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T18:14:19.584+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T18:14:24.273+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T18:14:29.227+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T18:14:33.823+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T18:14:40.039+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T18:14:47.097+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T18:14:52.065+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T18:14:57.201+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T18:15:28.777+0000] {job.py:229} INFO - Heartbeat recovered after 32.35 seconds
+[2024-11-06T18:15:38.732+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T18:15:44.873+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T18:15:50.800+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T18:15:56.442+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T18:16:02.202+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T18:16:06.928+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T18:16:12.317+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T18:16:17.812+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T18:16:25.008+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T18:16:30.850+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T18:16:34.950+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T18:16:38.973+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T18:17:19.323+0000] {job.py:229} INFO - Heartbeat recovered after 39.83 seconds
+[2024-11-06T18:17:21.548+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T18:17:26.070+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T18:17:32.086+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T18:17:38.219+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T18:17:44.804+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T18:17:50.672+0000] {base.py:84} INFO - Retrieving connection 'postgres_default'
+[2024-11-06T18:18:11.251+0000] {job.py:229} INFO - Heartbeat recovered after 21.64 seconds
+[2024-11-06T18:18:23.383+0000] {connection.py:531} ERROR - Unable to retrieve connection from secrets backend (MetastoreBackend). Checking subsequent secrets backend.
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3371, in _wrap_pool_connect
+    return fn()
+           ^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/impl.py", line 256, in _do_get
+    return self._create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 690, in __connect
+    with util.safe_reraise():
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+psycopg2.OperationalError: could not translate host name "postgres" to address: Temporary failure in name resolution
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/connection.py", line 526, in get_connection_from_secrets
+    conn = secrets_backend.get_connection(conn_id=conn_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/secrets/metastore.py", line 43, in get_connection
+    return MetastoreBackend._fetch_connection(conn_id, session=session)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/api_internal/internal_api_call.py", line 139, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 94, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/secrets/metastore.py", line 74, in _fetch_connection
+    conn = session.scalar(select(Connection).where(Connection.conn_id == conn_id).limit(1))
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 1747, in scalar
+    return self.execute(
+           ^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 1716, in execute
+    conn = self._connection_for_bind(bind)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 1555, in _connection_for_bind
+    return self._transaction._connection_for_bind(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/orm/session.py", line 750, in _connection_for_bind
+    conn = bind.connect()
+           ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/future/engine.py", line 412, in connect
+    return super(Engine, self).connect()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3325, in connect
+    return self._connection_cls(self, close_with_result=close_with_result)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 96, in __init__
+    else engine.raw_connection()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3404, in raw_connection
+    return self._wrap_pool_connect(self.pool.connect, _connection)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3374, in _wrap_pool_connect
+    Connection._handle_dbapi_exception_noconnection(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 2208, in _handle_dbapi_exception_noconnection
+    util.raise_(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/base.py", line 3371, in _wrap_pool_connect
+    return fn()
+           ^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 327, in connect
+    return _ConnectionFairy._checkout(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 894, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 493, in checkout
+    rec = pool._do_get()
+          ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/impl.py", line 256, in _do_get
+    return self._create_connection()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 273, in _create_connection
+    return _ConnectionRecord(self)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 388, in __init__
+    self.__connect()
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 690, in __connect
+    with util.safe_reraise():
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/util/langhelpers.py", line 70, in __exit__
+    compat.raise_(
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/util/compat.py", line 211, in raise_
+    raise exception
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/pool/base.py", line 686, in __connect
+    self.dbapi_connection = connection = pool._invoke_creator(self)
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/create.py", line 574, in connect
+    return dialect.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/sqlalchemy/engine/default.py", line 598, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/psycopg2/__init__.py", line 122, in connect
+    conn = _connect(dsn, connection_factory=connection_factory, **kwasync)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) could not translate host name "postgres" to address: Temporary failure in name resolution
+
+(Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2024-11-06T18:18:30.256+0000] {job.py:229} INFO - Heartbeat recovered after 19.01 seconds
+[2024-11-06T18:18:30.256+0000] {taskinstance.py:3301} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/ETL.py", line 104, in extrair
+    carregar_stage(chunk.to_dict(orient='records'))
+  File "/opt/airflow/dags/ETL.py", line 13, in carregar_stage
+    conn = obter_conexao_db()
+           ^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/ETL.py", line 10, in obter_conexao_db
+    return hook.get_conn()
+           ^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/postgres/hooks/postgres.py", line 146, in get_conn
+    conn = deepcopy(self.connection or self.get_connection(conn_id))
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/hooks/base.py", line 83, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/connection.py", line 537, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `postgres_default` isn't defined
+[2024-11-06T18:18:30.301+0000] {logging_mixin.py:190} INFO - Task instance in failure state
+[2024-11-06T18:18:30.302+0000] {logging_mixin.py:190} INFO - Task start:2024-11-06 18:10:43.872202+00:00 end:2024-11-06 18:18:30.300706+00:00 duration:466.428504
+[2024-11-06T18:18:30.304+0000] {logging_mixin.py:190} INFO - Task:<Task(PythonOperator): extrair> dag:<DAG: cotahist_etl> dagrun:<DagRun cotahist_etl @ 2024-11-06 18:10:39.608404+00:00: manual__2024-11-06T18:10:39.608404+00:00, state:running, queued_at: 2024-11-06 18:10:39.639873+00:00. externally triggered: True>
+[2024-11-06T18:18:30.305+0000] {logging_mixin.py:190} INFO - Failure caused by The conn_id `postgres_default` isn't defined
+[2024-11-06T18:18:30.307+0000] {taskinstance.py:1225} INFO - Marking task as FAILED. dag_id=cotahist_etl, task_id=extrair, run_id=manual__2024-11-06T18:10:39.608404+00:00, execution_date=20241106T181039, start_date=20241106T181043, end_date=20241106T181830
+[2024-11-06T18:18:30.339+0000] {taskinstance.py:340} INFO - ::group::Post task execution logs
+[2024-11-06T18:18:30.342+0000] {standard_task_runner.py:124} ERROR - Failed to execute job 14 for task extrair (The conn_id `postgres_default` isn't defined; 270)
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/task/task_runner/standard_task_runner.py", line 117, in _start_by_fork
+    ret = args.func(args, dag=self.dag)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/cli_config.py", line 49, in command
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/cli.py", line 115, in wrapper
+    return f(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 483, in task_run
+    task_return_code = _run_task_by_selected_method(args, _dag, ti)
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 256, in _run_task_by_selected_method
+    return _run_raw_task(args, ti)
+           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/cli/commands/task_command.py", line 341, in _run_raw_task
+    return ti._run_raw_task(
+           ^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/session.py", line 97, in wrapper
+    return func(*args, session=session, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 2995, in _run_raw_task
+    return _run_raw_task(
+           ^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 273, in _run_raw_task
+    TaskInstance._execute_task_with_callbacks(
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3149, in _execute_task_with_callbacks
+    result = self._execute_task(context, task_orig)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 3173, in _execute_task
+    return _execute_task(self, context, task_orig)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 767, in _execute_task
+    result = _execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/taskinstance.py", line 733, in _execute_callable
+    return ExecutionCallableRunner(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/baseoperator.py", line 406, in wrapper
+    return func(self, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 238, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/operators/python.py", line 256, in execute_callable
+    return runner.run(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/utils/operator_helpers.py", line 252, in run
+    return self.func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/ETL.py", line 104, in extrair
+    carregar_stage(chunk.to_dict(orient='records'))
+  File "/opt/airflow/dags/ETL.py", line 13, in carregar_stage
+    conn = obter_conexao_db()
+           ^^^^^^^^^^^^^^^^^^
+  File "/opt/airflow/dags/ETL.py", line 10, in obter_conexao_db
+    return hook.get_conn()
+           ^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/providers/postgres/hooks/postgres.py", line 146, in get_conn
+    conn = deepcopy(self.connection or self.get_connection(conn_id))
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/hooks/base.py", line 83, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/airflow/.local/lib/python3.12/site-packages/airflow/models/connection.py", line 537, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `postgres_default` isn't defined
+[2024-11-06T18:18:30.414+0000] {local_task_job_runner.py:261} INFO - Task exited with return code 1
+[2024-11-06T18:18:30.565+0000] {taskinstance.py:3891} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2024-11-06T18:18:30.578+0000] {local_task_job_runner.py:240} INFO - ::endgroup::

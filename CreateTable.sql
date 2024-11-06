@@ -33,7 +33,6 @@ CREATE TABLE IF NOT EXISTS dim_calendario (
 
 CREATE TABLE IF NOT EXISTS dim_ativos (
     id SERIAL PRIMARY KEY,
-    nome_empresa VARCHAR(50),
     ativo VARCHAR(20) UNIQUE
 );
 
